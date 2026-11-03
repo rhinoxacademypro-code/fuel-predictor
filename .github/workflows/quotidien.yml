@@ -32,8 +32,8 @@ jobs:
       run:
         working-directory: moteur
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
           cache: pip
@@ -75,10 +75,10 @@ jobs:
       run:
         working-directory: web
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           ref: ${{ github.ref_name }} # dernière version de main, données du moteur comprises
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           node-version: 24
           cache: npm
@@ -87,13 +87,13 @@ jobs:
       - name: Tests de la règle de décision
         run: npm test
       - id: pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
       - name: Construction du site
         run: npm run build
         env:
           BASE_PATH: ${{ steps.pages.outputs.base_path }}
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: web/out
       - id: publication
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5

@@ -44,6 +44,20 @@ function etatDuJour(serie: PointPrix[], jour: string): Etat | null {
   return { prix: actuel, depuis: passe[i].date, variation: i > 0 ? actuel - passe[i - 1].prix : null };
 }
 
+type Annonce = { date: string; prix: number; variation: number };
+
+// Prochain prix déjà publié par le SPF. be.STAT donne parfois la date de demain avec le prix du jour reconduit
+// avant la publication : seule une ligne future qui change le prix compte comme une annonce officielle.
+function prochainPrix(serie: PointPrix[], jour: string, actuel: number): Annonce | null {
+  const suivant = serie.find((p) => p.date > jour && Math.abs(p.prix - actuel) >= 1e-9);
+  return suivant ? { ...suivant, variation: suivant.prix - actuel } : null;
+}
+
+const lendemain = (jour: string) => new Date(new Date(`${jour}T12:00:00Z`).getTime() + 86_400_000).toISOString().slice(0, 10);
+
+const sens = (v: number) => (v > 0 ? "text-hausse" : "text-baisse");
+const ecart = (v: number) => `${v > 0 ? "▲ +" : "▼ −"}${euros(Math.abs(v))} €`;
+
 export function PrixActuels({ donnees }: { donnees: PrixOfficiels }) {
   // La date du jour n'est connue qu'au navigateur : la page pré-rendue ne doit pas figer une date
   const jour = useSyncExternalStore(sansAbonnement, aujourdhuiBruxelles, () => null);
@@ -71,7 +85,8 @@ export function PrixActuels({ donnees }: { donnees: PrixOfficiels }) {
         {PRODUITS.map((p) => {
           const etat = jour ? etatDuJour(donnees.series[p.code], jour) : null;
           const v = etat?.variation ?? null;
-          const couleur = v === null || Math.abs(v) < 1e-9 ? "text-neutre" : v > 0 ? "text-hausse" : "text-baisse";
+          const couleur = v === null || Math.abs(v) < 1e-9 ? "text-neutre" : sens(v);
+          const annonce = jour && etat ? prochainPrix(donnees.series[p.code], jour, etat.prix) : null;
           return (
             <li key={p.code} className="rounded-2xl border border-border bg-surface p-4">
               <div className="flex items-baseline justify-between gap-3">
@@ -88,6 +103,16 @@ export function PrixActuels({ donnees }: { donnees: PrixOfficiels }) {
                 <span className="ml-1 text-base font-normal text-muted">€/L</span>
               </p>
               <p className="mt-1 text-xs text-faint">{etat ? `En vigueur depuis le ${dateCourte(etat.depuis)}` : " "}</p>
+              {annonce && jour && (
+                <div className="mt-3 flex items-baseline justify-between gap-3 rounded-xl bg-surface-2 px-3 py-2">
+                  <p className="text-sm">
+                    <span className="text-muted">{annonce.date === lendemain(jour) ? "Demain" : `Le ${dateCourte(annonce.date)}`} : </span>
+                    <span className="chiffres font-semibold">{euros(annonce.prix)} €/L</span>
+                    <span className="block text-xs text-faint">Officiel, publié par le SPF</span>
+                  </p>
+                  <span className={`chiffres text-sm font-medium ${sens(annonce.variation)}`}>{ecart(annonce.variation)}</span>
+                </div>
+              )}
             </li>
           );
         })}
