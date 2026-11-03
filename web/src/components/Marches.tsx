@@ -54,8 +54,16 @@ function graduations(min: number, max: number): number[] {
   return t;
 }
 
-function Graphique({ serie, points }: { serie: Serie; points: Point[] }) {
+// Avec l'année quand la courbe couvre plus de 10 mois (sinon « lundi 3 nov. » serait ambigu)
+const dateGraphique = (iso: string, avecAnnee: boolean) =>
+  avecAnnee
+    ? new Intl.DateTimeFormat("fr-BE", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" }).format(new Date(`${iso}T00:00:00Z`))
+    : jourCourt(iso);
+
+export function Graphique({ serie, points }: { serie: Serie; points: Point[] }) {
   const [survol, setSurvol] = useState<number | null>(null);
+  const avecAnnee = Date.parse(points.at(-1)!.date) - Date.parse(points[0].date) > 300 * 86_400_000;
+  const date = (iso: string) => dateGraphique(iso, avecAnnee);
   const vals = points.map((p) => p.valeur);
   const min = Math.min(...vals);
   const max = Math.max(...vals);
@@ -87,13 +95,13 @@ function Graphique({ serie, points }: { serie: Serie; points: Point[] }) {
   return (
     <div>
       <p className="text-xs text-faint" aria-live="polite">
-        <span className="chiffres font-medium text-text">{valeur(serie, points[actif].valeur)}</span> · {jourCourt(points[actif].date)}
+        <span className="chiffres font-medium text-text">{valeur(serie, points[actif].valeur)}</span> · {date(points[actif].date)}
       </p>
       <svg
         viewBox={`0 0 ${L} ${H}`}
         className="mt-2 w-full touch-none select-none outline-none focus-visible:ring-1 focus-visible:ring-border"
         role="img"
-        aria-label={`${serie.nom} du ${jourCourt(points[0].date)} au ${jourCourt(points.at(-1)!.date)}, de ${valeur(serie, points[0].valeur)} à ${valeur(serie, points.at(-1)!.valeur)}`}
+        aria-label={`${serie.nom} du ${date(points[0].date)} au ${date(points.at(-1)!.date)}, de ${valeur(serie, points[0].valeur)} à ${valeur(serie, points.at(-1)!.valeur)}`}
         tabIndex={0}
         onPointerMove={versIndex}
         onPointerDown={versIndex}
@@ -117,8 +125,8 @@ function Graphique({ serie, points }: { serie: Serie; points: Point[] }) {
         <circle cx={x(actif)} cy={y(points[actif].valeur)} r={4} fill={TRAIT} stroke="var(--surface)" strokeWidth={2} />
       </svg>
       <div className="mt-1 flex justify-between pl-[14%] text-[10px] text-faint">
-        <span>{jourCourt(points[0].date)}</span>
-        <span>{jourCourt(points.at(-1)!.date)}</span>
+        <span>{date(points[0].date)}</span>
+        <span>{date(points.at(-1)!.date)}</span>
       </div>
     </div>
   );
