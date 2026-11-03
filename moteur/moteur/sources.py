@@ -52,9 +52,27 @@ def prix_bestat(vue: str = VUE_30_JOURS) -> pd.DataFrame:
     })
 
 
+SAUT_ABERRANT = 0.40  # €/L en un jour : jamais observé dans les prix officiels (record réel : 0,31 €/L)
+
+
+def pics_aberrants(changements: pd.Series) -> list[tuple[pd.Timestamp, pd.Timestamp]]:
+    """Périodes d'un prix manifestement faux dans une série de changements (index = date) : saut d'au moins
+    40 c/L annulé à au moins 80 % dans les 7 jours. Exemple : 98 E5 à 2,167 €/L du 20 au 22 juillet 2020
+    dans les fichiers Brafco, entre 1,449 et 1,426 €/L."""
+    c = changements.sort_index()
+    periodes = []
+    for i in range(1, len(c) - 1):
+        saut, retour = c.iloc[i] - c.iloc[i - 1], c.iloc[i + 1] - c.iloc[i]
+        if (abs(saut) >= SAUT_ABERRANT and saut * retour < 0 and abs(retour) >= 0.8 * abs(saut)
+                and c.index[i + 1] - c.index[i] <= pd.Timedelta(days=7)):
+            periodes.append((c.index[i], c.index[i + 1] - pd.Timedelta(days=1)))
+    return periodes
+
+
 def prix_brafco(dossier: Path) -> pd.DataFrame:
     """Historique Brafco (fichiers annuels téléchargés à la main). Le fichier ne liste que les
-    changements : on propage chaque prix jusqu'au changement suivant."""
+    changements : on propage chaque prix jusqu'au changement suivant. Les pics manifestement faux
+    (voir pics_aberrants) sont retirés plutôt que corrigés : aucune valeur n'est inventée."""
     lignes = []
     for f in sorted(Path(dossier).glob("daily-*.xlsx")):
         it = openpyxl.load_workbook(f, read_only=True).worksheets[0].iter_rows(values_only=True)
@@ -67,7 +85,12 @@ def prix_brafco(dossier: Path) -> pd.DataFrame:
             lignes += [(jour, code, float(r[i])) for code, i in idx.items() if r[i] is not None]
     chg = pd.DataFrame(lignes, columns=["date", "produit", "prix"]).drop_duplicates(["date", "produit"], keep="last")
     large = chg.pivot(index="date", columns="produit", values="prix")
+    aberrants = {p: pics_aberrants(large[p].dropna()) for p in large.columns}
     large = large.reindex(pd.date_range(large.index.min(), large.index.max(), freq="D")).ffill()
+    for produit, periodes in aberrants.items():  # prix faux retirés : ces jours restent sans valeur
+        for debut, fin in periodes:
+            large.loc[debut:fin, produit] = float("nan")
+            print(f"  prix Brafco aberrant ignoré : {produit} du {debut.date()} au {fin.date()}")
     long = large.rename_axis("date_application").reset_index().melt("date_application", var_name="produit", value_name="prix_tvac")
     long = long.dropna()
     long["prix_htva"] = None
