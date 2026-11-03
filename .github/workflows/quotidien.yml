@@ -1,6 +1,8 @@
 # Collecte, prévisions, puis publication du site sur GitHub Pages. Horaires en UTC (GitHub ne connaît pas l'heure belge) :
 # - 03:15 : après la clôture des marchés américains, prévisions du jour (prêtes avant 6 h 30 à Bruxelles) ;
-# - 14:30 et 16:30 en semaine : détection d'un nouveau prix officiel publié par le SPF pour le lendemain.
+# - 14:30 et 16:30 en semaine : détection d'un nouveau prix officiel publié par le SPF pour le lendemain ;
+# - 04:05, 04:35, 05:05 et 05:35 : brief du matin seul, publié une fois entre 6 h et 7 h à Bruxelles (hiver comme été :
+#   la commande `brief` vérifie l'heure belge et ne publie qu'une fois par jour ; les autres tâches le rattrapent si besoin).
 # GitHub peut retarder ces tâches de quelques minutes à une heure : rien ici ne dépend de l'heure exacte.
 # Les données (moteur/depot, moteur/sorties) sont enregistrées dans le dépôt par un commit automatique.
 # Une modification poussée sur main republie seulement le site, sans relancer le moteur.
@@ -10,6 +12,7 @@ on:
   schedule:
     - cron: "15 3 * * *"
     - cron: "30 14,16 * * 1-5"
+    - cron: "5,35 4,5 * * *"
   workflow_dispatch:
   push:
     branches: [main]
@@ -28,6 +31,10 @@ jobs:
     if: ${{ github.event_name != 'push' }}
     runs-on: ubuntu-latest
     timeout-minutes: 20
+    outputs:
+      donnees_nouvelles: ${{ steps.enregistrement.outputs.donnees_nouvelles }}
+    env:
+      BRIEF_SEUL: ${{ github.event.schedule == '5,35 4,5 * * *' }}
     defaults:
       run:
         working-directory: moteur
@@ -42,14 +49,19 @@ jobs:
       - name: Tests du moteur
         run: python -m unittest discover -s tests -t .
       - name: Collecte
+        if: ${{ env.BRIEF_SEUL != 'true' }}
         run: python -m moteur collecter
       - name: Prévisions
-        if: ${{ !cancelled() }}
+        if: ${{ !cancelled() && env.BRIEF_SEUL != 'true' }}
         run: python -m moteur prevoir
       - name: Fiabilité
         if: ${{ !cancelled() && (github.event.schedule == '15 3 * * *' || github.event_name == 'workflow_dispatch') }}
         run: python -m moteur evaluer
+      - name: Brief du matin
+        if: ${{ !cancelled() }}
+        run: python -m moteur brief
       - name: Enregistrement des données dans le dépôt
+        id: enregistrement
         if: ${{ !cancelled() }}
         run: |
           git config user.name "github-actions[bot]"
@@ -61,11 +73,13 @@ jobs:
             git commit -m "Données du $(date -u '+%Y-%m-%d %H:%M') UTC"
             git pull --rebase
             git push
+            echo "donnees_nouvelles=true" >> "$GITHUB_OUTPUT"
           fi
 
   site:
     needs: moteur
-    if: ${{ !cancelled() }}
+    # republié après un envoi sur main, ou si le moteur a enregistré de nouvelles données
+    if: ${{ !cancelled() && (github.event_name == 'push' || needs.moteur.outputs.donnees_nouvelles == 'true') }}
     runs-on: ubuntu-latest
     timeout-minutes: 15
     environment:

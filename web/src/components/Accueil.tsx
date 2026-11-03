@@ -27,9 +27,11 @@ export function SelecteurCarburant() {
   );
 }
 
-export function Indicateur({ previsions, erreur }: { previsions: Prevision[]; erreur?: string }) {
+// `jourDecision` : date à laquelle juger les prévisions (par défaut aujourd'hui ; le brief utilise sa propre date)
+export function Indicateur({ previsions, erreur, jourDecision }: { previsions: Prevision[]; erreur?: string; jourDecision?: string }) {
   const [prefs] = usePreferences();
-  const jour = useAujourdhui();
+  const aujourdhui = useAujourdhui();
+  const jour = jourDecision ?? aujourdhui;
   if (!jour) return <div className="h-36 animate-pulse rounded-2xl bg-surface" />;
   const miennes = previsions.filter((p) => p.produit === prefs.carburant);
   const v = decider(miennes, jour, { quantite: prefs.quantite, seuilEuros: prefs.seuilEuros, seuilProba: 0.6 });

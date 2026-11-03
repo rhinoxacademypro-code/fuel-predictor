@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Indicateur, PrevisionsMonCarburant, SelecteurCarburant } from "@/components/Accueil";
 import { PrixActuels } from "@/components/PrixActuels";
 import { chargerPrevisions } from "@/lib/previsions";
@@ -28,10 +29,14 @@ export default async function Accueil() {
         <PrixActuels donnees={prix} />
       </section>
 
+      <Link href="/brief" className="rounded-2xl border border-border bg-surface p-4 text-sm">
+        <span className="font-medium">Brief du matin</span>
+        <span className="mt-1 block text-muted">Actualités du pétrole et marché de la veille, chaque jour entre 6 h et 7 h.</span>
+      </Link>
+
       <section aria-labelledby="titre-suite" className="space-y-3">
         <h2 id="titre-suite" className="text-sm font-medium text-muted">Bientôt sur cet écran</h2>
         <ul className="grid gap-2 text-sm text-muted">
-          <li className="rounded-2xl border border-dashed border-border p-4">Dernières actualités du marché (phase 2)</li>
           <li className="rounded-2xl border border-dashed border-border p-4">Stations autour de toi (phase 3)</li>
         </ul>
       </section>

@@ -4,6 +4,7 @@
   python -m moteur collecter     mise à jour quotidienne (be.STAT 30 j, BCE et cotations des 15 derniers jours)
   python -m moteur prevoir       prévisions J+1 à J+3 du jour (option --date AAAA-MM-JJ)
   python -m moteur evaluer       fiabilité hors échantillon et effet du recalibrage
+  python -m moteur brief         brief du matin (une fois par jour, à partir de 6 h à Bruxelles ; option --force)
 
 Dépôt de données : dossier FUEL_DEPOT (par défaut moteur/depot, enregistré dans le dépôt GitHub).
 """
@@ -22,6 +23,7 @@ from zoneinfo import ZoneInfo
 import numpy as np
 import pandas as pd
 
+from . import brief as brief_matin
 from . import fiabilite, modele, sources
 from .depot import DepotLocal, maintenant
 
@@ -139,6 +141,33 @@ def evaluer(_):
     return 0
 
 
+def brief(args):
+    d = depot()
+    maintenant = dt.datetime.now(dt.timezone.utc)
+    dossier = ICI / "sorties" / "briefs"
+    fichier = dossier / f"{brief_matin.heure_bruxelles(maintenant).date().isoformat()}.json"
+    publier, raison = brief_matin.publication(maintenant, fichier.exists(), args.force)
+    if not publier:
+        print(f"Brief non publié : {raison}.")
+        return 0
+    try:
+        articles, erreur = brief_matin.telecharger_actualites(), ""
+    except Exception as e:  # sans actualités, le brief reste utile (prix, prévisions, marché)
+        articles, erreur = None, f"{type(e).__name__}: {e}"
+        print(f"  ÉCHEC actualités : {erreur}")
+    fichiers = sorted((ICI / "sorties").glob("previsions-????-??-??.json"))
+    previsions = json.loads(fichiers[-1].read_text()) if fichiers else []
+    contenu = brief_matin.construire(d.lire("prix_officiels"), d.lire("cotations"), d.lire("taux_change"), previsions,
+                                     articles, maintenant, raison, "actualités indisponibles" if erreur else "")
+    dossier.mkdir(parents=True, exist_ok=True)
+    fichier.write_text(json.dumps(contenu, indent=1, ensure_ascii=False, allow_nan=False))
+    print(f"Brief du {contenu['date']} publié ({raison}) : {len(contenu['actualites'])} actualités, "
+          f"{len(contenu['marche'])} cotations, {len(previsions)} prévisions.")
+    for a in contenu["actualites"]:
+        print(f"  - {a['publie_le'][:16]} {a['media']} : {a['titre']}")
+    return 0
+
+
 def main():
     ap = argparse.ArgumentParser(prog="moteur")
     sous = ap.add_subparsers(dest="commande", required=True)
@@ -148,6 +177,9 @@ def main():
     p.add_argument("--date")
     p.set_defaults(f=prevoir)
     sous.add_parser("evaluer").set_defaults(f=evaluer)
+    b = sous.add_parser("brief")
+    b.add_argument("--force", action="store_true", help="publier même hors fenêtre ou si déjà publié")
+    b.set_defaults(f=brief)
     args = ap.parse_args()
     try:
         sys.exit(args.f(args))

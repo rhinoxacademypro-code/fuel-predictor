@@ -82,3 +82,4 @@ Chaque étape se termine par une vérification et un compte rendu avant de passe
 | 1.3 Moteur de prévision | Code prêt et testé en local, probabilités recalibrées. Archivage dans `moteur/depot/previsions.csv` |
 | 1.4 Dashboard | Indicateur, prévisions et réglages faits et testés en local (10 tests de la règle de décision), lus depuis les fichiers du moteur |
 | 1.5 Fiabilité visible | Page Fiabilité et alerte « moteur pas meilleur » faites et testées en local. Le suivi en direct démarrera avec les prévisions quotidiennes |
+| 2 Morning Brief | Fait le 03/11/2026 et testé en local : onglet Brief publié entre 6 h et 7 h (4 créneaux GitHub), actualités par mots-clés, marché de la veille, historique 30 jours. **Sans notification** (choix de Florian) |
