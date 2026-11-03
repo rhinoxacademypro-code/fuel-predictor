@@ -1,6 +1,6 @@
 [
  {
-  "emise_le": "2026-11-03T09:43:10+00:00",
+  "emise_le": "2026-11-03T20:34:53+00:00",
   "produit": "e10",
   "horizon": 1,
   "date_cible": "2026-11-04",
@@ -20,7 +20,7 @@
   "explication": "Prix officiel déjà publié par le SPF : 1,905 €/L (−8,3 c/L)."
  },
  {
-  "emise_le": "2026-11-03T09:43:10+00:00",
+  "emise_le": "2026-11-03T20:34:53+00:00",
   "produit": "e10",
   "horizon": 2,
   "date_cible": "2026-11-05",
@@ -40,7 +40,7 @@
   "explication": "Depuis le dernier changement (mercredi 28 octobre), la cotation essence RBOB New York convertie en euros a varié de −7,7 c/L. Le SPF ajuste le prix quand cet écart dépasse un seuil : une baisse est le scénario le plus probable (59 %)."
  },
  {
-  "emise_le": "2026-11-03T09:43:10+00:00",
+  "emise_le": "2026-11-03T20:34:53+00:00",
   "produit": "e10",
   "horizon": 3,
   "date_cible": "2026-11-06",
@@ -60,7 +60,7 @@
   "explication": "Depuis le dernier changement (mercredi 28 octobre), la cotation essence RBOB New York convertie en euros a varié de −7,7 c/L. Le SPF ajuste le prix quand cet écart dépasse un seuil : une baisse est le scénario le plus probable (70 %)."
  },
  {
-  "emise_le": "2026-11-03T09:43:10+00:00",
+  "emise_le": "2026-11-03T20:34:53+00:00",
   "produit": "e98",
   "horizon": 1,
   "date_cible": "2026-11-04",
@@ -80,7 +80,7 @@
   "explication": "Prix officiel déjà publié par le SPF : 2,030 €/L (−11,9 c/L)."
  },
  {
-  "emise_le": "2026-11-03T09:43:10+00:00",
+  "emise_le": "2026-11-03T20:34:53+00:00",
   "produit": "e98",
   "horizon": 2,
   "date_cible": "2026-11-05",
@@ -88,19 +88,19 @@
   "modele_version": "logit-iso-1.0",
   "certain": false,
   "statut": "previsionnel",
-  "p_baisse": 0.609,
-  "p_stable": 0.3896,
+  "p_baisse": 0.6084,
+  "p_stable": 0.3902,
   "p_hausse": 0.0013,
   "scenario": -1,
-  "variation_estimee": -0.057,
-  "intervalle_bas": -0.1047,
+  "variation_estimee": -0.0585,
+  "intervalle_bas": -0.082,
   "intervalle_haut": 0.0,
-  "amplitude": 0.057,
-  "confiance": 0.609,
+  "amplitude": 0.0585,
+  "confiance": 0.6084,
   "explication": "Depuis le dernier changement (mercredi 28 octobre), la cotation essence RBOB New York convertie en euros a varié de −7,7 c/L. Le SPF ajuste le prix quand cet écart dépasse un seuil : une baisse est le scénario le plus probable (61 %)."
  },
  {
-  "emise_le": "2026-11-03T09:43:10+00:00",
+  "emise_le": "2026-11-03T20:34:53+00:00",
   "produit": "e98",
   "horizon": 3,
   "date_cible": "2026-11-06",
@@ -108,19 +108,19 @@
   "modele_version": "logit-iso-1.0",
   "certain": false,
   "statut": "previsionnel",
-  "p_baisse": 0.698,
-  "p_stable": 0.3006,
+  "p_baisse": 0.7015,
+  "p_stable": 0.2971,
   "p_hausse": 0.0014,
   "scenario": -1,
-  "variation_estimee": -0.0569,
-  "intervalle_bas": -0.1153,
-  "intervalle_haut": 0.002,
-  "amplitude": 0.0569,
-  "confiance": 0.698,
+  "variation_estimee": -0.0587,
+  "intervalle_bas": -0.0846,
+  "intervalle_haut": 0.0,
+  "amplitude": 0.0587,
+  "confiance": 0.7015,
   "explication": "Depuis le dernier changement (mercredi 28 octobre), la cotation essence RBOB New York convertie en euros a varié de −7,7 c/L. Le SPF ajuste le prix quand cet écart dépasse un seuil : une baisse est le scénario le plus probable (70 %)."
  },
  {
-  "emise_le": "2026-11-03T09:43:10+00:00",
+  "emise_le": "2026-11-03T20:34:53+00:00",
   "produit": "b7",
   "horizon": 1,
   "date_cible": "2026-11-04",
@@ -140,7 +140,7 @@
   "explication": "Depuis le dernier changement (samedi 31 octobre), la cotation diesel/fioul New York convertie en euros a varié de −8,3 c/L. L'écart reste sous le seuil qui déclenche un ajustement : le plus probable est un prix inchangé (76 %). Risque de baisse : 24 %."
  },
  {
-  "emise_le": "2026-11-03T09:43:10+00:00",
+  "emise_le": "2026-11-03T20:34:53+00:00",
   "produit": "b7",
   "horizon": 2,
   "date_cible": "2026-11-05",
@@ -160,7 +160,7 @@
   "explication": "Depuis le dernier changement (samedi 31 octobre), la cotation diesel/fioul New York convertie en euros a varié de −8,3 c/L. Le SPF ajuste le prix quand cet écart dépasse un seuil : une baisse est le scénario le plus probable (58 %)."
  },
  {
-  "emise_le": "2026-11-03T09:43:10+00:00",
+  "emise_le": "2026-11-03T20:34:53+00:00",
   "produit": "b7",
   "horizon": 3,
   "date_cible": "2026-11-06",
