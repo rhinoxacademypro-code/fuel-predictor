@@ -4,6 +4,7 @@
   python -m moteur collecter     mise à jour quotidienne (be.STAT 30 j, BCE et cotations des 15 derniers jours)
   python -m moteur prevoir       prévisions J+1 à J+3 du jour (option --date AAAA-MM-JJ)
   python -m moteur evaluer       fiabilité hors échantillon et effet du recalibrage
+  python -m moteur stations      stations-service d'OpenStreetMap (mise à jour mensuelle ; option --depuis FICHIER)
   python -m moteur brief         brief du matin (une fois par jour, à partir de 6 h à Bruxelles ; option --force)
 
 Dépôt de données : dossier FUEL_DEPOT (par défaut moteur/depot, enregistré dans le dépôt GitHub).
@@ -25,6 +26,7 @@ import pandas as pd
 
 from . import brief as brief_matin
 from . import fiabilite, modele, sources
+from . import stations as osm
 from .depot import DepotLocal, maintenant
 
 ICI = Path(__file__).resolve().parent.parent
@@ -170,6 +172,21 @@ def brief(args):
     return 0
 
 
+def stations(args):
+    if args.depuis:  # export Overpass déjà téléchargé (premier remplissage)
+        d = json.loads(Path(args.depuis).read_text())
+        elements, base = d["elements"], d.get("osm3s", {}).get("timestamp_osm_base", "")
+    else:
+        elements, base = osm.telecharger()
+    liste = osm.compacter(elements)
+    if len(liste) < 1000:  # garde-fou : une réponse tronquée ne remplace pas le fichier existant
+        raise RuntimeError(f"seulement {len(liste)} stations reçues : fichier précédent conservé")
+    sortie = ICI / "sorties" / "stations.json"
+    sortie.write_text(json.dumps(osm.fichier(liste, base, maintenant()), ensure_ascii=False, separators=(",", ":")))
+    print(f"{len(liste)} stations enregistrées (base OpenStreetMap du {base}).")
+    return 0
+
+
 def main():
     ap = argparse.ArgumentParser(prog="moteur")
     sous = ap.add_subparsers(dest="commande", required=True)
@@ -179,6 +196,9 @@ def main():
     p.add_argument("--date")
     p.set_defaults(f=prevoir)
     sous.add_parser("evaluer").set_defaults(f=evaluer)
+    s = sous.add_parser("stations")
+    s.add_argument("--depuis", help="fichier JSON Overpass déjà téléchargé")
+    s.set_defaults(f=stations)
     b = sous.add_parser("brief")
     b.add_argument("--force", action="store_true", help="publier même hors fenêtre ou si déjà publié")
     b.set_defaults(f=brief)

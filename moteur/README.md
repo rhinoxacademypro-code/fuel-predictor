@@ -28,6 +28,9 @@ Depuis ce dossier, après `python3 -m venv .venv` et `.venv/bin/pip install -r r
   Déjà fait : l'historique est dans `depot/`. Les fichiers Brafco d'origine restent sur le Mac (non publiés).
 - `collecter` : mise à jour quotidienne. Une source en panne n'arrête pas les autres ; tout est noté dans `journal_collectes`.
 - `prevoir` : prévisions du jour, archivées dans `previsions`. Avec `--date AAAA-MM-JJ` dans le passé : simulation rétrospective, **jamais archivée**, avec uniquement les prix connus ce jour-là.
+- `stations` : stations-service de Belgique d'après OpenStreetMap (`sorties/stations.json` : emplacement, enseigne, adresse,
+  horaires, carburants déclarés ; aucun prix). Une fois par mois ; plusieurs essais si le serveur public est saturé, fichier
+  précédent conservé en cas d'échec ou de réponse tronquée.
 - `brief` : brief du matin dans `sorties/briefs/AAAA-MM-JJ.json` : prix du jour et prochain prix publié, prévisions,
   cotations de la veille, 5 actualités au plus. Publié une seule fois par jour, à partir de 6 h à Bruxelles (« en retard »
   après 7 h) ; `--force` pour republier. Actualités : Google News (Belgique, français), titres contenant un mot-clé
