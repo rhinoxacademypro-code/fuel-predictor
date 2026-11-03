@@ -34,6 +34,11 @@ const ONGLETS: Onglet[] = [
     icone: <path {...trait} d="M5 20V11M12 20V5M19 20v-6" />,
   },
   {
+    href: "/marches",
+    label: "Marchés",
+    icone: <path {...trait} d="M7 4v3M7 13v4M5 7h4v6H5zM17 6v4M17 16v3M15 10h4v6h-4z" />,
+  },
+  {
     href: "/parametres",
     label: "Réglages",
     icone: <path {...trait} d="M4 7h10M18 7h2M4 17h4M12 17h8M16 5v4M10 15v4" />,
@@ -47,7 +52,7 @@ export function BarreNavigation() {
       aria-label="Navigation principale"
       className="fixed inset-x-0 bottom-0 z-10 border-t border-border bg-bg/95 pb-[env(safe-area-inset-bottom)] backdrop-blur"
     >
-      <ul className="mx-auto grid max-w-xl grid-cols-6">
+      <ul className="mx-auto grid max-w-xl grid-cols-7">
         {ONGLETS.map((o) => {
           const actif = o.href === "/" ? chemin === "/" : chemin.startsWith(o.href);
           return (
@@ -55,7 +60,7 @@ export function BarreNavigation() {
               <Link
                 href={o.href}
                 aria-current={actif ? "page" : undefined}
-                className={`flex flex-col items-center gap-1 py-2.5 text-[11px] ${actif ? "text-text" : "text-faint"}`}
+                className={`flex flex-col items-center gap-1 py-2.5 text-[10px] ${actif ? "text-text" : "text-faint"}`}
               >
                 <svg viewBox="0 0 24 24" className="h-6 w-6" aria-hidden="true">
                   {o.icone}

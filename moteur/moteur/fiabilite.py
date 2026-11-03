@@ -137,3 +137,31 @@ def direct(previsions: pd.DataFrame, prix: pd.DataFrame) -> dict:
         "brier": round(_brier(e[["p_baisse", "p_stable", "p_hausse"]].values.astype(float), sens.values), 4),
         "brier_naif": round(_brier(np.tile([0.0, 1.0, 0.0], (len(e), 1)), sens.values), 4),
     }
+
+
+def lien_marche(prix: pd.DataFrame, x_eur: pd.DataFrame, debut: str = "2019-01-01") -> dict:
+    """Comment le prix maximum belge suit les cotations de New York (converties en €/L), mesuré sur l'historique :
+    décalage (jours) où les variations quotidiennes sont le plus liées, et part du mouvement de la cotation
+    retrouvée dans le prix belge après 7 et 30 jours (pente d'une régression des variations)."""
+    resultat = {}
+    for produit, proxy in (("e10", "rbob"), ("e98", "rbob"), ("b7", "ho")):
+        serie = prix[prix["produit"] == produit].set_index("date_application")["prix_tvac"].sort_index()
+        jours = pd.date_range(debut, serie.index.max(), freq="D")
+        p = serie.reindex(serie.index.union(jours)).ffill().reindex(jours)
+        x = x_eur[proxy].reindex(x_eur.index.union(jours)).ffill().reindex(jours)
+        correlations = {k: float(p.diff().corr(x.diff().shift(k))) for k in range(8)}
+        transmission = {}
+        for h in (7, 30):
+            a, b = p.diff(h), x.shift(1).diff(h)
+            ok = a.notna() & b.notna()
+            transmission[h] = {"part_pct": round(100 * float(np.polyfit(b[ok], a[ok], 1)[0])),
+                               "correlation": round(float(a[ok].corr(b[ok])), 2)}
+        resultat[produit] = {
+            "cotation": proxy,
+            "periode": [jours[0].date().isoformat(), jours[-1].date().isoformat()],
+            "decalage_jours": max(correlations, key=correlations.get),
+            "decalages_lies": [k for k, c in correlations.items() if c >= 0.5 * max(correlations.values())],
+            "transmission_7j": transmission[7],
+            "transmission_30j": transmission[30],
+        }
+    return resultat

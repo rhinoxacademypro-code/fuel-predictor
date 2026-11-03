@@ -134,6 +134,8 @@ def evaluer(_):
         ind = fiabilite.indicateur(rejoues[1], rejoues[2])
         print(f"{'':<15} indicateur : {ind}")
         rapport["produits"][produit] = {"nom": modele.NOMS[produit], "horizons": horizons, "indicateur": ind}
+    rapport["lien_marche"] = fiabilite.lien_marche(prix, x_eur)
+    print("lien avec les cotations :", rapport["lien_marche"])
     print("prévisions archivées :", rapport["direct"])
     sortie = ICI / "sorties"
     sortie.mkdir(exist_ok=True)

@@ -1,5 +1,5 @@
 {
- "genere_le": "2026-11-03T09:43:13+00:00",
+ "genere_le": "2026-11-03T12:43:17+00:00",
  "modele_version": "logit-iso-1.0",
  "produits": {
   "e10": {
@@ -848,5 +848,75 @@
   "scenario_juste_pct": 60.0,
   "brier": 0.7731,
   "brier_naif": 0.8
+ },
+ "lien_marche": {
+  "e10": {
+   "cotation": "rbob",
+   "periode": [
+    "2019-01-01",
+    "2026-11-04"
+   ],
+   "decalage_jours": 2,
+   "decalages_lies": [
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "transmission_7j": {
+    "part_pct": 37,
+    "correlation": 0.34
+   },
+   "transmission_30j": {
+    "part_pct": 88,
+    "correlation": 0.75
+   }
+  },
+  "e98": {
+   "cotation": "rbob",
+   "periode": [
+    "2019-01-01",
+    "2026-11-04"
+   ],
+   "decalage_jours": 2,
+   "decalages_lies": [
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "transmission_7j": {
+    "part_pct": 38,
+    "correlation": 0.24
+   },
+   "transmission_30j": {
+    "part_pct": 96,
+    "correlation": 0.68
+   }
+  },
+  "b7": {
+   "cotation": "ho",
+   "periode": [
+    "2019-01-01",
+    "2026-11-04"
+   ],
+   "decalage_jours": 3,
+   "decalages_lies": [
+    2,
+    3,
+    4,
+    5
+   ],
+   "transmission_7j": {
+    "part_pct": 48,
+    "correlation": 0.46
+   },
+   "transmission_30j": {
+    "part_pct": 96,
+    "correlation": 0.82
+   }
+  }
  }
 }
