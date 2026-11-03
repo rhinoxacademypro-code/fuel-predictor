@@ -1,0 +1,23 @@
+# Dépendances et builds
+node_modules/
+.next/
+out/
+etude-faisabilite/.venv/
+__pycache__/
+
+# Secrets : jamais dans le dépôt
+.env
+.env*.local
+
+# Système
+.DS_Store
+moteur/.venv/
+# Simulations rétrospectives : jamais archivées
+moteur/sorties/*-retro.json
+
+# Fichiers bruts Brafco (dépôt public : on garde les prix extraits, pas les fichiers d'origine)
+moteur/donnees_initiales/brafco/
+etude-faisabilite/donnees/brut/
+
+# Brouillons d'e-mails avec coordonnées personnelles
+EMAILS-DEMANDES.md

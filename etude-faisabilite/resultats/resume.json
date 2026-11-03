@@ -1,0 +1,1717 @@
+{
+ "calibration": {
+  "b7|boosting|J+1": [
+   {
+    "proba_annoncee": 0.0039778988379666255,
+    "frequence_observee": 0.04225352112676056,
+    "n": 497
+   },
+   {
+    "proba_annoncee": 0.01744020044890113,
+    "frequence_observee": 0.05835010060362173,
+    "n": 497
+   },
+   {
+    "proba_annoncee": 0.05029150937908955,
+    "frequence_observee": 0.10441767068273092,
+    "n": 498
+   },
+   {
+    "proba_annoncee": 0.1512434402128546,
+    "frequence_observee": 0.23588709677419356,
+    "n": 496
+   },
+   {
+    "proba_annoncee": 0.5484748458382889,
+    "frequence_observee": 0.4357429718875502,
+    "n": 498
+   }
+  ],
+  "b7|boosting|J+2": [
+   {
+    "proba_annoncee": 0.012791933148222471,
+    "frequence_observee": 0.0642504118616145,
+    "n": 607
+   },
+   {
+    "proba_annoncee": 0.045724360521241285,
+    "frequence_observee": 0.14497528830313014,
+    "n": 607
+   },
+   {
+    "proba_annoncee": 0.1173147260284527,
+    "frequence_observee": 0.20098846787479407,
+    "n": 607
+   },
+   {
+    "proba_annoncee": 0.3020521097272142,
+    "frequence_observee": 0.3542009884678748,
+    "n": 607
+   },
+   {
+    "proba_annoncee": 0.7681045421520222,
+    "frequence_observee": 0.6447368421052632,
+    "n": 608
+   }
+  ],
+  "b7|boosting|J+3": [
+   {
+    "proba_annoncee": 0.016987968398287177,
+    "frequence_observee": 0.09014084507042254,
+    "n": 710
+   },
+   {
+    "proba_annoncee": 0.07394218888919606,
+    "frequence_observee": 0.16643159379407615,
+    "n": 709
+   },
+   {
+    "proba_annoncee": 0.18974016883599096,
+    "frequence_observee": 0.2863187588152327,
+    "n": 709
+   },
+   {
+    "proba_annoncee": 0.4553076225447958,
+    "frequence_observee": 0.4767277856135402,
+    "n": 709
+   },
+   {
+    "proba_annoncee": 0.8555090643428019,
+    "frequence_observee": 0.7394366197183099,
+    "n": 710
+   }
+  ],
+  "b7|climato|J+1": [
+   {
+    "proba_annoncee": 0.1266339869281046,
+    "frequence_observee": 0.13385826771653545,
+    "n": 254
+   },
+   {
+    "proba_annoncee": 0.12782673899047373,
+    "frequence_observee": 0.14201183431952663,
+    "n": 507
+   },
+   {
+    "proba_annoncee": 0.12983402651273598,
+    "frequence_observee": 0.19603960396039605,
+    "n": 505
+   },
+   {
+    "proba_annoncee": 0.14528623441010144,
+    "frequence_observee": 0.16468253968253968,
+    "n": 504
+   },
+   {
+    "proba_annoncee": 0.1596856679124008,
+    "frequence_observee": 0.20670391061452514,
+    "n": 716
+   }
+  ],
+  "b7|climato|J+2": [
+   {
+    "proba_annoncee": 0.11643864595985849,
+    "frequence_observee": 0.14590747330960854,
+    "n": 562
+   },
+   {
+    "proba_annoncee": 0.16028862180348788,
+    "frequence_observee": 0.24675324675324675,
+    "n": 539
+   },
+   {
+    "proba_annoncee": 0.2568684246338684,
+    "frequence_observee": 0.35126050420168065,
+    "n": 595
+   },
+   {
+    "proba_annoncee": 0.27305825746478257,
+    "frequence_observee": 0.29131175468483816,
+    "n": 587
+   },
+   {
+    "proba_annoncee": 0.3062006103842192,
+    "frequence_observee": 0.3466135458167331,
+    "n": 753
+   }
+  ],
+  "b7|climato|J+3": [
+   {
+    "proba_annoncee": 0.12013362428407073,
+    "frequence_observee": 0.17133956386292834,
+    "n": 642
+   },
+   {
+    "proba_annoncee": 0.20527217464885913,
+    "frequence_observee": 0.24765729585006693,
+    "n": 747
+   },
+   {
+    "proba_annoncee": 0.29117479369410804,
+    "frequence_observee": 0.3696969696969697,
+    "n": 660
+   },
+   {
+    "proba_annoncee": 0.3753301508600801,
+    "frequence_observee": 0.4675716440422323,
+    "n": 663
+   },
+   {
+    "proba_annoncee": 0.4313451249449161,
+    "frequence_observee": 0.47784431137724553,
+    "n": 835
+   }
+  ],
+  "b7|emulateur|J+1": [
+   {
+    "proba_annoncee": 0.06539538297651218,
+    "frequence_observee": 0.07529411764705882,
+    "n": 425
+   },
+   {
+    "proba_annoncee": 0.07038744480927644,
+    "frequence_observee": 0.0748792270531401,
+    "n": 414
+   },
+   {
+    "proba_annoncee": 0.07712187470894923,
+    "frequence_observee": 0.12267657992565056,
+    "n": 538
+   },
+   {
+    "proba_annoncee": 0.1160686894832625,
+    "frequence_observee": 0.15423728813559323,
+    "n": 590
+   },
+   {
+    "proba_annoncee": 0.4366497891603203,
+    "frequence_observee": 0.4161849710982659,
+    "n": 519
+   }
+  ],
+  "b7|emulateur|J+2": [
+   {
+    "proba_annoncee": 0.13411145299102495,
+    "frequence_observee": 0.13409961685823754,
+    "n": 522
+   },
+   {
+    "proba_annoncee": 0.14106249383450659,
+    "frequence_observee": 0.146484375,
+    "n": 512
+   },
+   {
+    "proba_annoncee": 0.14994512088529616,
+    "frequence_observee": 0.22358346094946402,
+    "n": 653
+   },
+   {
+    "proba_annoncee": 0.20292137175108627,
+    "frequence_observee": 0.27534246575342464,
+    "n": 730
+   },
+   {
+    "proba_annoncee": 0.5991094649869595,
+    "frequence_observee": 0.5880452342487884,
+    "n": 619
+   }
+  ],
+  "b7|emulateur|J+3": [
+   {
+    "proba_annoncee": 0.19424499037092025,
+    "frequence_observee": 0.18719211822660098,
+    "n": 609
+   },
+   {
+    "proba_annoncee": 0.20196296299031688,
+    "frequence_observee": 0.21140939597315436,
+    "n": 596
+   },
+   {
+    "proba_annoncee": 0.21463349524871692,
+    "frequence_observee": 0.30638852672750977,
+    "n": 767
+   },
+   {
+    "proba_annoncee": 0.2715365620827941,
+    "frequence_observee": 0.3578088578088578,
+    "n": 858
+   },
+   {
+    "proba_annoncee": 0.6520810518880914,
+    "frequence_observee": 0.6499302649930265,
+    "n": 717
+   }
+  ],
+  "b7|emulateur_brent|J+1": [
+   {
+    "proba_annoncee": 0.07476683320512723,
+    "frequence_observee": 0.082687338501292,
+    "n": 387
+   },
+   {
+    "proba_annoncee": 0.0814443324178053,
+    "frequence_observee": 0.1141396933560477,
+    "n": 587
+   },
+   {
+    "proba_annoncee": 0.09349144447399722,
+    "frequence_observee": 0.12077294685990338,
+    "n": 414
+   },
+   {
+    "proba_annoncee": 0.10889159033714396,
+    "frequence_observee": 0.1576271186440678,
+    "n": 590
+   },
+   {
+    "proba_annoncee": 0.3715632354492215,
+    "frequence_observee": 0.38188976377952755,
+    "n": 508
+   }
+  ],
+  "b7|emulateur_brent|J+2": [
+   {
+    "proba_annoncee": 0.13978106164076104,
+    "frequence_observee": 0.15254237288135594,
+    "n": 472
+   },
+   {
+    "proba_annoncee": 0.15481026435493775,
+    "frequence_observee": 0.2054794520547945,
+    "n": 730
+   },
+   {
+    "proba_annoncee": 0.17187403663376205,
+    "frequence_observee": 0.2546583850931677,
+    "n": 483
+   },
+   {
+    "proba_annoncee": 0.18319441898510835,
+    "frequence_observee": 0.22408963585434175,
+    "n": 714
+   },
+   {
+    "proba_annoncee": 0.5109073596944099,
+    "frequence_observee": 0.5510204081632653,
+    "n": 637
+   }
+  ],
+  "b7|emulateur_brent|J+3": [
+   {
+    "proba_annoncee": 0.19943561100277724,
+    "frequence_observee": 0.22141560798548093,
+    "n": 551
+   },
+   {
+    "proba_annoncee": 0.21506997018255367,
+    "frequence_observee": 0.281068524970964,
+    "n": 861
+   },
+   {
+    "proba_annoncee": 0.23964406594180543,
+    "frequence_observee": 0.3380281690140845,
+    "n": 568
+   },
+   {
+    "proba_annoncee": 0.2515363536618761,
+    "frequence_observee": 0.29362214199759323,
+    "n": 831
+   },
+   {
+    "proba_annoncee": 0.5650863919727647,
+    "frequence_observee": 0.6086956521739131,
+    "n": 736
+   }
+  ],
+  "b7|logistique|J+1": [
+   {
+    "proba_annoncee": 0.026273635346143957,
+    "frequence_observee": 0.06438631790744467,
+    "n": 497
+   },
+   {
+    "proba_annoncee": 0.05044717642135804,
+    "frequence_observee": 0.05432595573440644,
+    "n": 497
+   },
+   {
+    "proba_annoncee": 0.07318900887753678,
+    "frequence_observee": 0.09236947791164658,
+    "n": 498
+   },
+   {
+    "proba_annoncee": 0.1470907686619677,
+    "frequence_observee": 0.21370967741935484,
+    "n": 496
+   },
+   {
+    "proba_annoncee": 0.5538655719219412,
+    "frequence_observee": 0.45180722891566266,
+    "n": 498
+   }
+  ],
+  "b7|logistique|J+2": [
+   {
+    "proba_annoncee": 0.04090919824197129,
+    "frequence_observee": 0.09555189456342669,
+    "n": 607
+   },
+   {
+    "proba_annoncee": 0.08682003900129567,
+    "frequence_observee": 0.11532125205930807,
+    "n": 607
+   },
+   {
+    "proba_annoncee": 0.14770262814292426,
+    "frequence_observee": 0.1825657894736842,
+    "n": 608
+   },
+   {
+    "proba_annoncee": 0.30638265988649394,
+    "frequence_observee": 0.38613861386138615,
+    "n": 606
+   },
+   {
+    "proba_annoncee": 0.7764296187058853,
+    "frequence_observee": 0.6299342105263158,
+    "n": 608
+   }
+  ],
+  "b7|logistique|J+3": [
+   {
+    "proba_annoncee": 0.05337916300878231,
+    "frequence_observee": 0.10140845070422536,
+    "n": 710
+   },
+   {
+    "proba_annoncee": 0.11879086014045544,
+    "frequence_observee": 0.1692524682651622,
+    "n": 709
+   },
+   {
+    "proba_annoncee": 0.21882315149882545,
+    "frequence_observee": 0.2651622002820874,
+    "n": 709
+   },
+   {
+    "proba_annoncee": 0.4287686906546162,
+    "frequence_observee": 0.4936530324400564,
+    "n": 709
+   },
+   {
+    "proba_annoncee": 0.8582560944952089,
+    "frequence_observee": 0.7295774647887324,
+    "n": 710
+   }
+  ],
+  "b7|logistique_brent|J+1": [
+   {
+    "proba_annoncee": 0.0372103552953289,
+    "frequence_observee": 0.06841046277665996,
+    "n": 497
+   },
+   {
+    "proba_annoncee": 0.06203639364285586,
+    "frequence_observee": 0.08249496981891348,
+    "n": 497
+   },
+   {
+    "proba_annoncee": 0.08624534484647078,
+    "frequence_observee": 0.11066398390342053,
+    "n": 497
+   },
+   {
+    "proba_annoncee": 0.1516027754696856,
+    "frequence_observee": 0.23340040241448692,
+    "n": 497
+   },
+   {
+    "proba_annoncee": 0.49364928851187584,
+    "frequence_observee": 0.3815261044176707,
+    "n": 498
+   }
+  ],
+  "b7|logistique_brent|J+2": [
+   {
+    "proba_annoncee": 0.05460782310633546,
+    "frequence_observee": 0.09060955518945635,
+    "n": 607
+   },
+   {
+    "proba_annoncee": 0.10385613172777497,
+    "frequence_observee": 0.1630971993410214,
+    "n": 607
+   },
+   {
+    "proba_annoncee": 0.16560949740137593,
+    "frequence_observee": 0.18585526315789475,
+    "n": 608
+   },
+   {
+    "proba_annoncee": 0.2870603801154807,
+    "frequence_observee": 0.3976897689768977,
+    "n": 606
+   },
+   {
+    "proba_annoncee": 0.7081657424142187,
+    "frequence_observee": 0.5723684210526315,
+    "n": 608
+   }
+  ],
+  "b7|logistique_brent|J+3": [
+   {
+    "proba_annoncee": 0.06678679924662681,
+    "frequence_observee": 0.11690140845070422,
+    "n": 710
+   },
+   {
+    "proba_annoncee": 0.13957671097710117,
+    "frequence_observee": 0.17489421720733428,
+    "n": 709
+   },
+   {
+    "proba_annoncee": 0.23605551979467135,
+    "frequence_observee": 0.3018335684062059,
+    "n": 709
+   },
+   {
+    "proba_annoncee": 0.40352216728016727,
+    "frequence_observee": 0.4809590973201692,
+    "n": 709
+   },
+   {
+    "proba_annoncee": 0.8043437712545108,
+    "frequence_observee": 0.6845070422535211,
+    "n": 710
+   }
+  ],
+  "b7|naif|J+1": [
+   {
+    "proba_annoncee": 0.0,
+    "frequence_observee": 0.1753821399839099,
+    "n": 2486
+   }
+  ],
+  "b7|naif|J+2": [
+   {
+    "proba_annoncee": 0.0,
+    "frequence_observee": 0.28194993412384717,
+    "n": 3036
+   }
+  ],
+  "b7|naif|J+3": [
+   {
+    "proba_annoncee": 0.0,
+    "frequence_observee": 0.35184663095573726,
+    "n": 3547
+   }
+  ],
+  "e10|boosting|J+1": [
+   {
+    "proba_annoncee": 0.014315923745015786,
+    "frequence_observee": 0.05432595573440644,
+    "n": 497
+   },
+   {
+    "proba_annoncee": 0.03655721378254527,
+    "frequence_observee": 0.060362173038229376,
+    "n": 497
+   },
+   {
+    "proba_annoncee": 0.0721624546634052,
+    "frequence_observee": 0.09036144578313253,
+    "n": 498
+   },
+   {
+    "proba_annoncee": 0.1524830832546473,
+    "frequence_observee": 0.16733870967741934,
+    "n": 496
+   },
+   {
+    "proba_annoncee": 0.4561345302312862,
+    "frequence_observee": 0.3373493975903614,
+    "n": 498
+   }
+  ],
+  "e10|boosting|J+2": [
+   {
+    "proba_annoncee": 0.030785715727211747,
+    "frequence_observee": 0.07413509060955518,
+    "n": 607
+   },
+   {
+    "proba_annoncee": 0.07491029373366519,
+    "frequence_observee": 0.10873146622734761,
+    "n": 607
+   },
+   {
+    "proba_annoncee": 0.13980198208838374,
+    "frequence_observee": 0.16282894736842105,
+    "n": 608
+   },
+   {
+    "proba_annoncee": 0.28569328335423294,
+    "frequence_observee": 0.28052805280528054,
+    "n": 606
+   },
+   {
+    "proba_annoncee": 0.6474683986194466,
+    "frequence_observee": 0.5197368421052632,
+    "n": 608
+   }
+  ],
+  "e10|boosting|J+3": [
+   {
+    "proba_annoncee": 0.03649789901420505,
+    "frequence_observee": 0.08169014084507042,
+    "n": 710
+   },
+   {
+    "proba_annoncee": 0.0937851643434585,
+    "frequence_observee": 0.12129760225669958,
+    "n": 709
+   },
+   {
+    "proba_annoncee": 0.18844430599399725,
+    "frequence_observee": 0.2397743300423131,
+    "n": 709
+   },
+   {
+    "proba_annoncee": 0.3763445675053065,
+    "frequence_observee": 0.385049365303244,
+    "n": 709
+   },
+   {
+    "proba_annoncee": 0.7346155986434131,
+    "frequence_observee": 0.6084507042253521,
+    "n": 710
+   }
+  ],
+  "e10|climato|J+1": [
+   {
+    "proba_annoncee": 0.12313937753721246,
+    "frequence_observee": 0.12598425196850394,
+    "n": 254
+   },
+   {
+    "proba_annoncee": 0.12427971448223714,
+    "frequence_observee": 0.17357001972386588,
+    "n": 507
+   },
+   {
+    "proba_annoncee": 0.13060689402273562,
+    "frequence_observee": 0.1188118811881188,
+    "n": 505
+   },
+   {
+    "proba_annoncee": 0.1385313599625515,
+    "frequence_observee": 0.15664335664335666,
+    "n": 715
+   },
+   {
+    "proba_annoncee": 0.1434150963044335,
+    "frequence_observee": 0.12079207920792079,
+    "n": 505
+   }
+  ],
+  "e10|climato|J+2": [
+   {
+    "proba_annoncee": 0.1278497146932348,
+    "frequence_observee": 0.15658362989323843,
+    "n": 562
+   },
+   {
+    "proba_annoncee": 0.1420825718310622,
+    "frequence_observee": 0.1280148423005566,
+    "n": 539
+   },
+   {
+    "proba_annoncee": 0.24170969138007362,
+    "frequence_observee": 0.3058823529411765,
+    "n": 595
+   },
+   {
+    "proba_annoncee": 0.25952658146397906,
+    "frequence_observee": 0.2555366269165247,
+    "n": 587
+   },
+   {
+    "proba_annoncee": 0.2782412443557474,
+    "frequence_observee": 0.2749003984063745,
+    "n": 753
+   }
+  ],
+  "e10|climato|J+3": [
+   {
+    "proba_annoncee": 0.12619508958490278,
+    "frequence_observee": 0.1542056074766355,
+    "n": 642
+   },
+   {
+    "proba_annoncee": 0.1893083689234218,
+    "frequence_observee": 0.2078804347826087,
+    "n": 736
+   },
+   {
+    "proba_annoncee": 0.2694817591558258,
+    "frequence_observee": 0.28659476117103233,
+    "n": 649
+   },
+   {
+    "proba_annoncee": 0.34483714336650795,
+    "frequence_observee": 0.3901018922852984,
+    "n": 687
+   },
+   {
+    "proba_annoncee": 0.38969060904343694,
+    "frequence_observee": 0.375750300120048,
+    "n": 833
+   }
+  ],
+  "e10|emulateur|J+1": [
+   {
+    "proba_annoncee": 0.08114755203227864,
+    "frequence_observee": 0.07913669064748201,
+    "n": 417
+   },
+   {
+    "proba_annoncee": 0.08239431884225037,
+    "frequence_observee": 0.11868686868686869,
+    "n": 396
+   },
+   {
+    "proba_annoncee": 0.08650791719081319,
+    "frequence_observee": 0.10256410256410256,
+    "n": 546
+   },
+   {
+    "proba_annoncee": 0.10448901672915335,
+    "frequence_observee": 0.09149277688603531,
+    "n": 623
+   },
+   {
+    "proba_annoncee": 0.3212594731673446,
+    "frequence_observee": 0.31746031746031744,
+    "n": 504
+   }
+  ],
+  "e10|emulateur|J+2": [
+   {
+    "proba_annoncee": 0.14500149812908952,
+    "frequence_observee": 0.2277432712215321,
+    "n": 483
+   },
+   {
+    "proba_annoncee": 0.14775572889590496,
+    "frequence_observee": 0.14258188824662812,
+    "n": 519
+   },
+   {
+    "proba_annoncee": 0.156968862914878,
+    "frequence_observee": 0.15712187958883994,
+    "n": 681
+   },
+   {
+    "proba_annoncee": 0.17249958094732895,
+    "frequence_observee": 0.1628222523744912,
+    "n": 737
+   },
+   {
+    "proba_annoncee": 0.44739784523648807,
+    "frequence_observee": 0.46266233766233766,
+    "n": 616
+   }
+  ],
+  "e10|emulateur|J+3": [
+   {
+    "proba_annoncee": 0.19383396934816052,
+    "frequence_observee": 0.21026490066225165,
+    "n": 604
+   },
+   {
+    "proba_annoncee": 0.19703964645094488,
+    "frequence_observee": 0.2874564459930314,
+    "n": 574
+   },
+   {
+    "proba_annoncee": 0.20861256990356955,
+    "frequence_observee": 0.18935643564356436,
+    "n": 808
+   },
+   {
+    "proba_annoncee": 0.2230876087423888,
+    "frequence_observee": 0.23747016706443913,
+    "n": 838
+   },
+   {
+    "proba_annoncee": 0.5073838233617723,
+    "frequence_observee": 0.5186721991701245,
+    "n": 723
+   }
+  ],
+  "e10|emulateur_brent|J+1": [
+   {
+    "proba_annoncee": 0.09482531566543365,
+    "frequence_observee": 0.1455026455026455,
+    "n": 378
+   },
+   {
+    "proba_annoncee": 0.09721014281547158,
+    "frequence_observee": 0.09669811320754718,
+    "n": 424
+   },
+   {
+    "proba_annoncee": 0.10179659364253034,
+    "frequence_observee": 0.10363636363636364,
+    "n": 550
+   },
+   {
+    "proba_annoncee": 0.10561398818838838,
+    "frequence_observee": 0.09516129032258064,
+    "n": 620
+   },
+   {
+    "proba_annoncee": 0.2886549538674353,
+    "frequence_observee": 0.27431906614785995,
+    "n": 514
+   }
+  ],
+  "e10|emulateur_brent|J+2": [
+   {
+    "proba_annoncee": 0.16443441587016708,
+    "frequence_observee": 0.2510729613733906,
+    "n": 466
+   },
+   {
+    "proba_annoncee": 0.16895826263997285,
+    "frequence_observee": 0.16952380952380952,
+    "n": 525
+   },
+   {
+    "proba_annoncee": 0.1772528086258464,
+    "frequence_observee": 0.1798063623789765,
+    "n": 723
+   },
+   {
+    "proba_annoncee": 0.18321773390425067,
+    "frequence_observee": 0.17391304347826086,
+    "n": 713
+   },
+   {
+    "proba_annoncee": 0.401326951486078,
+    "frequence_observee": 0.38752052545155996,
+    "n": 609
+   }
+  ],
+  "e10|emulateur_brent|J+3": [
+   {
+    "proba_annoncee": 0.2150409421258278,
+    "frequence_observee": 0.3290909090909091,
+    "n": 550
+   },
+   {
+    "proba_annoncee": 0.2207962201834993,
+    "frequence_observee": 0.2252836304700162,
+    "n": 617
+   },
+   {
+    "proba_annoncee": 0.23222687158186792,
+    "frequence_observee": 0.23258559622195984,
+    "n": 847
+   },
+   {
+    "proba_annoncee": 0.23865620786479813,
+    "frequence_observee": 0.2559055118110236,
+    "n": 508
+   },
+   {
+    "proba_annoncee": 0.3874086357720134,
+    "frequence_observee": 0.36292682926829267,
+    "n": 1025
+   }
+  ],
+  "e10|logistique|J+1": [
+   {
+    "proba_annoncee": 0.056008056436917926,
+    "frequence_observee": 0.052313883299798795,
+    "n": 497
+   },
+   {
+    "proba_annoncee": 0.07350712452544521,
+    "frequence_observee": 0.06237424547283702,
+    "n": 497
+   },
+   {
+    "proba_annoncee": 0.09062009792210246,
+    "frequence_observee": 0.08835341365461848,
+    "n": 498
+   },
+   {
+    "proba_annoncee": 0.1420531545044457,
+    "frequence_observee": 0.15120967741935484,
+    "n": 496
+   },
+   {
+    "proba_annoncee": 0.4240180643456152,
+    "frequence_observee": 0.35542168674698793,
+    "n": 498
+   }
+  ],
+  "e10|logistique|J+2": [
+   {
+    "proba_annoncee": 0.0716749086330042,
+    "frequence_observee": 0.0757825370675453,
+    "n": 607
+   },
+   {
+    "proba_annoncee": 0.12183518201635554,
+    "frequence_observee": 0.11367380560131796,
+    "n": 607
+   },
+   {
+    "proba_annoncee": 0.16632246137652681,
+    "frequence_observee": 0.1301482701812191,
+    "n": 607
+   },
+   {
+    "proba_annoncee": 0.2571764183242716,
+    "frequence_observee": 0.3031301482701812,
+    "n": 607
+   },
+   {
+    "proba_annoncee": 0.5984496424132569,
+    "frequence_observee": 0.5230263157894737,
+    "n": 608
+   }
+  ],
+  "e10|logistique|J+3": [
+   {
+    "proba_annoncee": 0.07962809729919301,
+    "frequence_observee": 0.08309859154929577,
+    "n": 710
+   },
+   {
+    "proba_annoncee": 0.14591483875472663,
+    "frequence_observee": 0.13399153737658676,
+    "n": 709
+   },
+   {
+    "proba_annoncee": 0.2253929754529202,
+    "frequence_observee": 0.22002820874471085,
+    "n": 709
+   },
+   {
+    "proba_annoncee": 0.3471653407744398,
+    "frequence_observee": 0.39492242595204513,
+    "n": 709
+   },
+   {
+    "proba_annoncee": 0.6943103029597674,
+    "frequence_observee": 0.604225352112676,
+    "n": 710
+   }
+  ],
+  "e10|logistique_brent|J+1": [
+   {
+    "proba_annoncee": 0.06057617631393025,
+    "frequence_observee": 0.05432595573440644,
+    "n": 497
+   },
+   {
+    "proba_annoncee": 0.08327122017286846,
+    "frequence_observee": 0.07243460764587525,
+    "n": 497
+   },
+   {
+    "proba_annoncee": 0.10546804975592405,
+    "frequence_observee": 0.12048192771084337,
+    "n": 498
+   },
+   {
+    "proba_annoncee": 0.1577911947818252,
+    "frequence_observee": 0.17137096774193547,
+    "n": 496
+   },
+   {
+    "proba_annoncee": 0.40013432316260533,
+    "frequence_observee": 0.29116465863453816,
+    "n": 498
+   }
+  ],
+  "e10|logistique_brent|J+2": [
+   {
+    "proba_annoncee": 0.08138643991573026,
+    "frequence_observee": 0.07742998352553541,
+    "n": 607
+   },
+   {
+    "proba_annoncee": 0.1379357833886531,
+    "frequence_observee": 0.12026359143327842,
+    "n": 607
+   },
+   {
+    "proba_annoncee": 0.18859284184722946,
+    "frequence_observee": 0.19407894736842105,
+    "n": 608
+   },
+   {
+    "proba_annoncee": 0.27372888542319423,
+    "frequence_observee": 0.29207920792079206,
+    "n": 606
+   },
+   {
+    "proba_annoncee": 0.5855355562386152,
+    "frequence_observee": 0.4621710526315789,
+    "n": 608
+   }
+  ],
+  "e10|logistique_brent|J+3": [
+   {
+    "proba_annoncee": 0.09123656747770158,
+    "frequence_observee": 0.07464788732394366,
+    "n": 710
+   },
+   {
+    "proba_annoncee": 0.16373114444568013,
+    "frequence_observee": 0.1777150916784203,
+    "n": 709
+   },
+   {
+    "proba_annoncee": 0.251623655047752,
+    "frequence_observee": 0.2468265162200282,
+    "n": 709
+   },
+   {
+    "proba_annoncee": 0.3725038352132129,
+    "frequence_observee": 0.37376586741889983,
+    "n": 709
+   },
+   {
+    "proba_annoncee": 0.6868865777956943,
+    "frequence_observee": 0.5633802816901409,
+    "n": 710
+   }
+  ],
+  "e10|naif|J+1": [
+   {
+    "proba_annoncee": 0.0,
+    "frequence_observee": 0.1419951729686243,
+    "n": 2486
+   }
+  ],
+  "e10|naif|J+2": [
+   {
+    "proba_annoncee": 0.0,
+    "frequence_observee": 0.22924901185770752,
+    "n": 3036
+   }
+  ],
+  "e10|naif|J+3": [
+   {
+    "proba_annoncee": 0.0,
+    "frequence_observee": 0.287285029602481,
+    "n": 3547
+   }
+  ],
+  "e98|boosting|J+1": [
+   {
+    "proba_annoncee": 0.012750642531368643,
+    "frequence_observee": 0.05835010060362173,
+    "n": 497
+   },
+   {
+    "proba_annoncee": 0.03513395504871573,
+    "frequence_observee": 0.056338028169014086,
+    "n": 497
+   },
+   {
+    "proba_annoncee": 0.06815850642020496,
+    "frequence_observee": 0.0963855421686747,
+    "n": 498
+   },
+   {
+    "proba_annoncee": 0.150926334331567,
+    "frequence_observee": 0.14919354838709678,
+    "n": 496
+   },
+   {
+    "proba_annoncee": 0.46599282333441694,
+    "frequence_observee": 0.3453815261044177,
+    "n": 498
+   }
+  ],
+  "e98|boosting|J+2": [
+   {
+    "proba_annoncee": 0.028964827829084792,
+    "frequence_observee": 0.0642504118616145,
+    "n": 607
+   },
+   {
+    "proba_annoncee": 0.07266643904228606,
+    "frequence_observee": 0.11037891268533773,
+    "n": 607
+   },
+   {
+    "proba_annoncee": 0.1377748829799635,
+    "frequence_observee": 0.17269736842105263,
+    "n": 608
+   },
+   {
+    "proba_annoncee": 0.28433791596561564,
+    "frequence_observee": 0.27722772277227725,
+    "n": 606
+   },
+   {
+    "proba_annoncee": 0.6566054122837053,
+    "frequence_observee": 0.5197368421052632,
+    "n": 608
+   }
+  ],
+  "e98|boosting|J+3": [
+   {
+    "proba_annoncee": 0.03466959629592228,
+    "frequence_observee": 0.07605633802816901,
+    "n": 710
+   },
+   {
+    "proba_annoncee": 0.09342179407274423,
+    "frequence_observee": 0.14386459802538787,
+    "n": 709
+   },
+   {
+    "proba_annoncee": 0.18420088166030352,
+    "frequence_observee": 0.24118476727785615,
+    "n": 709
+   },
+   {
+    "proba_annoncee": 0.3755568072337639,
+    "frequence_observee": 0.3700564971751412,
+    "n": 708
+   },
+   {
+    "proba_annoncee": 0.7528663398514508,
+    "frequence_observee": 0.6075949367088608,
+    "n": 711
+   }
+  ],
+  "e98|climato|J+1": [
+   {
+    "proba_annoncee": 0.12313937753721246,
+    "frequence_observee": 0.12598425196850394,
+    "n": 254
+   },
+   {
+    "proba_annoncee": 0.12427971448223714,
+    "frequence_observee": 0.17159763313609466,
+    "n": 507
+   },
+   {
+    "proba_annoncee": 0.1306068940227356,
+    "frequence_observee": 0.1188118811881188,
+    "n": 505
+   },
+   {
+    "proba_annoncee": 0.13810472476344463,
+    "frequence_observee": 0.15524475524475526,
+    "n": 715
+   },
+   {
+    "proba_annoncee": 0.14319124013865606,
+    "frequence_observee": 0.12079207920792079,
+    "n": 505
+   }
+  ],
+  "e98|climato|J+2": [
+   {
+    "proba_annoncee": 0.12636295319040544,
+    "frequence_observee": 0.1583629893238434,
+    "n": 562
+   },
+   {
+    "proba_annoncee": 0.1416365072059699,
+    "frequence_observee": 0.13172541743970315,
+    "n": 539
+   },
+   {
+    "proba_annoncee": 0.24259675366699016,
+    "frequence_observee": 0.3025210084033613,
+    "n": 595
+   },
+   {
+    "proba_annoncee": 0.26033808699540667,
+    "frequence_observee": 0.25383304940374785,
+    "n": 587
+   },
+   {
+    "proba_annoncee": 0.2781854832133086,
+    "frequence_observee": 0.2735723771580345,
+    "n": 753
+   }
+  ],
+  "e98|climato|J+3": [
+   {
+    "proba_annoncee": 0.1250687007675371,
+    "frequence_observee": 0.1588785046728972,
+    "n": 642
+   },
+   {
+    "proba_annoncee": 0.19083786593376048,
+    "frequence_observee": 0.20923913043478262,
+    "n": 736
+   },
+   {
+    "proba_annoncee": 0.2681916615870688,
+    "frequence_observee": 0.28659476117103233,
+    "n": 649
+   },
+   {
+    "proba_annoncee": 0.34610878563416314,
+    "frequence_observee": 0.38719068413391555,
+    "n": 687
+   },
+   {
+    "proba_annoncee": 0.3901360121032755,
+    "frequence_observee": 0.375750300120048,
+    "n": 833
+   }
+  ],
+  "e98|emulateur|J+1": [
+   {
+    "proba_annoncee": 0.08069950394804136,
+    "frequence_observee": 0.12020460358056266,
+    "n": 391
+   },
+   {
+    "proba_annoncee": 0.0829463447165203,
+    "frequence_observee": 0.07582938388625593,
+    "n": 422
+   },
+   {
+    "proba_annoncee": 0.08602103902535718,
+    "frequence_observee": 0.10110294117647059,
+    "n": 544
+   },
+   {
+    "proba_annoncee": 0.1064808031907989,
+    "frequence_observee": 0.09667194928684628,
+    "n": 631
+   },
+   {
+    "proba_annoncee": 0.3299772406114278,
+    "frequence_observee": 0.3132530120481928,
+    "n": 498
+   }
+  ],
+  "e98|emulateur|J+2": [
+   {
+    "proba_annoncee": 0.14652255628140803,
+    "frequence_observee": 0.2236024844720497,
+    "n": 483
+   },
+   {
+    "proba_annoncee": 0.15126375422190913,
+    "frequence_observee": 0.14258188824662812,
+    "n": 519
+   },
+   {
+    "proba_annoncee": 0.15740242418698894,
+    "frequence_observee": 0.16053019145802652,
+    "n": 679
+   },
+   {
+    "proba_annoncee": 0.17397595957047174,
+    "frequence_observee": 0.16260162601626016,
+    "n": 738
+   },
+   {
+    "proba_annoncee": 0.45172696531118295,
+    "frequence_observee": 0.46029173419773095,
+    "n": 617
+   }
+  ],
+  "e98|emulateur|J+3": [
+   {
+    "proba_annoncee": 0.19723117588209957,
+    "frequence_observee": 0.29947460595446584,
+    "n": 571
+   },
+   {
+    "proba_annoncee": 0.1999497100829956,
+    "frequence_observee": 0.2003338898163606,
+    "n": 599
+   },
+   {
+    "proba_annoncee": 0.21148825103757143,
+    "frequence_observee": 0.23522012578616353,
+    "n": 795
+   },
+   {
+    "proba_annoncee": 0.2238533436542251,
+    "frequence_observee": 0.19813519813519814,
+    "n": 858
+   },
+   {
+    "proba_annoncee": 0.5107632622908338,
+    "frequence_observee": 0.5151933701657458,
+    "n": 724
+   }
+  ],
+  "e98|emulateur_brent|J+1": [
+   {
+    "proba_annoncee": 0.09428544468034915,
+    "frequence_observee": 0.15,
+    "n": 400
+   },
+   {
+    "proba_annoncee": 0.09724446500869137,
+    "frequence_observee": 0.09669811320754718,
+    "n": 424
+   },
+   {
+    "proba_annoncee": 0.10150653885962097,
+    "frequence_observee": 0.10200364298724955,
+    "n": 549
+   },
+   {
+    "proba_annoncee": 0.10469942254295239,
+    "frequence_observee": 0.10049019607843138,
+    "n": 408
+   },
+   {
+    "proba_annoncee": 0.24364832477250525,
+    "frequence_observee": 0.2170212765957447,
+    "n": 705
+   }
+  ],
+  "e98|emulateur_brent|J+2": [
+   {
+    "proba_annoncee": 0.16507330121052596,
+    "frequence_observee": 0.25918367346938775,
+    "n": 490
+   },
+   {
+    "proba_annoncee": 0.1689289586635688,
+    "frequence_observee": 0.17142857142857143,
+    "n": 525
+   },
+   {
+    "proba_annoncee": 0.1767133049781002,
+    "frequence_observee": 0.17955801104972377,
+    "n": 724
+   },
+   {
+    "proba_annoncee": 0.18199932435832006,
+    "frequence_observee": 0.19310344827586207,
+    "n": 435
+   },
+   {
+    "proba_annoncee": 0.34398731699176766,
+    "frequence_observee": 0.3062645011600928,
+    "n": 862
+   }
+  ],
+  "e98|emulateur_brent|J+3": [
+   {
+    "proba_annoncee": 0.21745105796676883,
+    "frequence_observee": 0.3379549393414211,
+    "n": 577
+   },
+   {
+    "proba_annoncee": 0.2198327891494681,
+    "frequence_observee": 0.23014586709886548,
+    "n": 617
+   },
+   {
+    "proba_annoncee": 0.2310539581647215,
+    "frequence_observee": 0.23349056603773585,
+    "n": 848
+   },
+   {
+    "proba_annoncee": 0.23759155851670577,
+    "frequence_observee": 0.2603550295857988,
+    "n": 507
+   },
+   {
+    "proba_annoncee": 0.3998939244738445,
+    "frequence_observee": 0.35470941883767537,
+    "n": 998
+   }
+  ],
+  "e98|logistique|J+1": [
+   {
+    "proba_annoncee": 0.053093005173130314,
+    "frequence_observee": 0.04627766599597585,
+    "n": 497
+   },
+   {
+    "proba_annoncee": 0.0703733899477828,
+    "frequence_observee": 0.06237424547283702,
+    "n": 497
+   },
+   {
+    "proba_annoncee": 0.08717256029988776,
+    "frequence_observee": 0.09437751004016064,
+    "n": 498
+   },
+   {
+    "proba_annoncee": 0.14350775766344023,
+    "frequence_observee": 0.15524193548387097,
+    "n": 496
+   },
+   {
+    "proba_annoncee": 0.4466120754700694,
+    "frequence_observee": 0.3473895582329317,
+    "n": 498
+   }
+  ],
+  "e98|logistique|J+2": [
+   {
+    "proba_annoncee": 0.06980673600006138,
+    "frequence_observee": 0.08072487644151564,
+    "n": 607
+   },
+   {
+    "proba_annoncee": 0.11887292503782451,
+    "frequence_observee": 0.11037891268533773,
+    "n": 607
+   },
+   {
+    "proba_annoncee": 0.16165717128203516,
+    "frequence_observee": 0.12828947368421054,
+    "n": 608
+   },
+   {
+    "proba_annoncee": 0.2598183460945423,
+    "frequence_observee": 0.30528052805280526,
+    "n": 606
+   },
+   {
+    "proba_annoncee": 0.6198707528377092,
+    "frequence_observee": 0.5197368421052632,
+    "n": 608
+   }
+  ],
+  "e98|logistique|J+3": [
+   {
+    "proba_annoncee": 0.078781742436452,
+    "frequence_observee": 0.07887323943661972,
+    "n": 710
+   },
+   {
+    "proba_annoncee": 0.145061821477213,
+    "frequence_observee": 0.14104372355430184,
+    "n": 709
+   },
+   {
+    "proba_annoncee": 0.22435505197784825,
+    "frequence_observee": 0.229901269393512,
+    "n": 709
+   },
+   {
+    "proba_annoncee": 0.34959643394572254,
+    "frequence_observee": 0.383638928067701,
+    "n": 709
+   },
+   {
+    "proba_annoncee": 0.7074292386957111,
+    "frequence_observee": 0.6056338028169014,
+    "n": 710
+   }
+  ],
+  "e98|logistique_brent|J+1": [
+   {
+    "proba_annoncee": 0.056843111768138416,
+    "frequence_observee": 0.05835010060362173,
+    "n": 497
+   },
+   {
+    "proba_annoncee": 0.08106569777855102,
+    "frequence_observee": 0.06639839034205232,
+    "n": 497
+   },
+   {
+    "proba_annoncee": 0.10235873233271316,
+    "frequence_observee": 0.11468812877263582,
+    "n": 497
+   },
+   {
+    "proba_annoncee": 0.1539690091146038,
+    "frequence_observee": 0.17303822937625754,
+    "n": 497
+   },
+   {
+    "proba_annoncee": 0.4282701670164414,
+    "frequence_observee": 0.2931726907630522,
+    "n": 498
+   }
+  ],
+  "e98|logistique_brent|J+2": [
+   {
+    "proba_annoncee": 0.0784328761492888,
+    "frequence_observee": 0.08072487644151564,
+    "n": 607
+   },
+   {
+    "proba_annoncee": 0.13417903449330548,
+    "frequence_observee": 0.11037891268533773,
+    "n": 607
+   },
+   {
+    "proba_annoncee": 0.1854217822090247,
+    "frequence_observee": 0.20065789473684212,
+    "n": 608
+   },
+   {
+    "proba_annoncee": 0.26988576536374387,
+    "frequence_observee": 0.2838283828382838,
+    "n": 606
+   },
+   {
+    "proba_annoncee": 0.6091286104459721,
+    "frequence_observee": 0.46875,
+    "n": 608
+   }
+  ],
+  "e98|logistique_brent|J+3": [
+   {
+    "proba_annoncee": 0.08733589210079402,
+    "frequence_observee": 0.08309859154929577,
+    "n": 710
+   },
+   {
+    "proba_annoncee": 0.16140234073583606,
+    "frequence_observee": 0.1763046544428773,
+    "n": 709
+   },
+   {
+    "proba_annoncee": 0.24889433551282872,
+    "frequence_observee": 0.24118476727785615,
+    "n": 709
+   },
+   {
+    "proba_annoncee": 0.371903236563249,
+    "frequence_observee": 0.3765867418899859,
+    "n": 709
+   },
+   {
+    "proba_annoncee": 0.7021455795790466,
+    "frequence_observee": 0.5619718309859155,
+    "n": 710
+   }
+  ],
+  "e98|naif|J+1": [
+   {
+    "proba_annoncee": 0.0,
+    "frequence_observee": 0.1411906677393403,
+    "n": 2486
+   }
+  ],
+  "e98|naif|J+2": [
+   {
+    "proba_annoncee": 0.0,
+    "frequence_observee": 0.22891963109354413,
+    "n": 3036
+   }
+  ],
+  "e98|naif|J+3": [
+   {
+    "proba_annoncee": 0.0,
+    "frequence_observee": 0.28784888638285877,
+    "n": 3547
+   }
+  ]
+ },
+ "parametres_emulateur": {
+  "e10": {
+   "2017": {
+    "theta": 0.008,
+    "gamma": 2.0,
+    "amp_a": 0.256,
+    "amp_b": 0.0191
+   },
+   "2018": {
+    "theta": 0.008,
+    "gamma": 2.0,
+    "amp_a": 0.151,
+    "amp_b": 0.021
+   },
+   "2019": {
+    "theta": 0.008,
+    "gamma": 2.0,
+    "amp_a": 0.173,
+    "amp_b": 0.0198
+   },
+   "2020": {
+    "theta": 0.01,
+    "gamma": 1.0,
+    "amp_a": 0.198,
+    "amp_b": 0.0196
+   },
+   "2021": {
+    "theta": 0.01,
+    "gamma": 1.0,
+    "amp_a": 0.367,
+    "amp_b": 0.0175
+   },
+   "2022": {
+    "theta": 0.01,
+    "gamma": 1.0,
+    "amp_a": 0.381,
+    "amp_b": 0.0181
+   },
+   "2023": {
+    "theta": 0.008,
+    "gamma": 2.0,
+    "amp_a": 0.494,
+    "amp_b": 0.018
+   },
+   "2024": {
+    "theta": 0.008,
+    "gamma": 2.0,
+    "amp_a": 0.469,
+    "amp_b": 0.0187
+   },
+   "2025": {
+    "theta": 0.008,
+    "gamma": 2.0,
+    "amp_a": 0.467,
+    "amp_b": 0.019
+   },
+   "2026": {
+    "theta": 0.008,
+    "gamma": 2.0,
+    "amp_a": 0.482,
+    "amp_b": 0.0188
+   }
+  },
+  "e98": {
+   "2017": {
+    "theta": 0.008,
+    "gamma": 2.0,
+    "amp_a": 0.215,
+    "amp_b": 0.0217
+   },
+   "2018": {
+    "theta": 0.008,
+    "gamma": 2.0,
+    "amp_a": 0.135,
+    "amp_b": 0.0232
+   },
+   "2019": {
+    "theta": 0.008,
+    "gamma": 2.0,
+    "amp_a": 0.159,
+    "amp_b": 0.0221
+   },
+   "2020": {
+    "theta": 0.01,
+    "gamma": 1.0,
+    "amp_a": 0.169,
+    "amp_b": 0.022
+   },
+   "2021": {
+    "theta": 0.01,
+    "gamma": 1.0,
+    "amp_a": 0.113,
+    "amp_b": 0.0323
+   },
+   "2022": {
+    "theta": 0.01,
+    "gamma": 1.0,
+    "amp_a": 0.14,
+    "amp_b": 0.0308
+   },
+   "2023": {
+    "theta": 0.008,
+    "gamma": 2.0,
+    "amp_a": 0.375,
+    "amp_b": 0.0278
+   },
+   "2024": {
+    "theta": 0.008,
+    "gamma": 2.0,
+    "amp_a": 0.354,
+    "amp_b": 0.0278
+   },
+   "2025": {
+    "theta": 0.008,
+    "gamma": 2.0,
+    "amp_a": 0.37,
+    "amp_b": 0.0274
+   },
+   "2026": {
+    "theta": 0.008,
+    "gamma": 2.0,
+    "amp_a": 0.37,
+    "amp_b": 0.0268
+   }
+  },
+  "b7": {
+   "2017": {
+    "theta": 0.006,
+    "gamma": 0.5,
+    "amp_a": 0.445,
+    "amp_b": 0.0137
+   },
+   "2018": {
+    "theta": 0.006,
+    "gamma": 0.5,
+    "amp_a": 0.453,
+    "amp_b": 0.0126
+   },
+   "2019": {
+    "theta": 0.006,
+    "gamma": 0.5,
+    "amp_a": 0.464,
+    "amp_b": 0.0126
+   },
+   "2020": {
+    "theta": 0.006,
+    "gamma": 1.0,
+    "amp_a": 0.521,
+    "amp_b": 0.0116
+   },
+   "2021": {
+    "theta": 0.006,
+    "gamma": 1.0,
+    "amp_a": 0.61,
+    "amp_b": 0.0111
+   },
+   "2022": {
+    "theta": 0.006,
+    "gamma": 1.0,
+    "amp_a": 0.607,
+    "amp_b": 0.0113
+   },
+   "2023": {
+    "theta": 0.006,
+    "gamma": 1.0,
+    "amp_a": 0.623,
+    "amp_b": 0.0164
+   },
+   "2024": {
+    "theta": 0.006,
+    "gamma": 1.0,
+    "amp_a": 0.602,
+    "amp_b": 0.0165
+   },
+   "2025": {
+    "theta": 0.006,
+    "gamma": 1.0,
+    "amp_a": 0.603,
+    "amp_b": 0.0165
+   },
+   "2026": {
+    "theta": 0.006,
+    "gamma": 1.0,
+    "amp_a": 0.604,
+    "amp_b": 0.0166
+   }
+  }
+ },
+ "periode_test": [
+  "2017-01-01",
+  "2026-10-30"
+ ]
+}

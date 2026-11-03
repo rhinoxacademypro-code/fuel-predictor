@@ -1,0 +1,99 @@
+# Collecte, prévisions, puis publication du site sur GitHub Pages. Horaires en UTC (GitHub ne connaît pas l'heure belge) :
+# - 03:15 : après la clôture des marchés américains, prévisions du jour (prêtes avant 6 h 30 à Bruxelles) ;
+# - 14:30 et 16:30 en semaine : détection d'un nouveau prix officiel publié par le SPF pour le lendemain.
+# GitHub peut retarder ces tâches de quelques minutes à une heure : rien ici ne dépend de l'heure exacte.
+# Les données (moteur/depot, moteur/sorties) sont enregistrées dans le dépôt par un commit automatique.
+# Une modification poussée sur main republie seulement le site, sans relancer le moteur.
+name: Quotidien
+
+on:
+  schedule:
+    - cron: "15 3 * * *"
+    - cron: "30 14,16 * * 1-5"
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+concurrency:
+  group: quotidien
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  moteur:
+    if: ${{ github.event_name != 'push' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    defaults:
+      run:
+        working-directory: moteur
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: moteur/requirements.txt
+      - run: pip install -r requirements.txt
+      - name: Tests du moteur
+        run: python -m unittest discover -s tests -t .
+      - name: Collecte
+        run: python -m moteur collecter
+      - name: Prévisions
+        if: ${{ !cancelled() }}
+        run: python -m moteur prevoir
+      - name: Fiabilité
+        if: ${{ !cancelled() && (github.event.schedule == '15 3 * * *' || github.event_name == 'workflow_dispatch') }}
+        run: python -m moteur evaluer
+      - name: Enregistrement des données dans le dépôt
+        if: ${{ !cancelled() }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add depot sorties
+          if git diff --cached --quiet; then
+            echo "Aucune donnée nouvelle."
+          else
+            git commit -m "Données du $(date -u '+%Y-%m-%d %H:%M') UTC"
+            git pull --rebase
+            git push
+          fi
+
+  site:
+    needs: moteur
+    if: ${{ !cancelled() }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    environment:
+      name: github-pages
+      url: ${{ steps.publication.outputs.page_url }}
+    defaults:
+      run:
+        working-directory: web
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }} # dernière version de main, données du moteur comprises
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+      - run: npm ci
+      - name: Tests de la règle de décision
+        run: npm test
+      - id: pages
+        uses: actions/configure-pages@v5
+      - name: Construction du site
+        run: npm run build
+        env:
+          BASE_PATH: ${{ steps.pages.outputs.base_path }}
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: web/out
+      - id: publication
+        uses: actions/deploy-pages@v4
