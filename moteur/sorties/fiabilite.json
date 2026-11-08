@@ -1,5 +1,5 @@
 {
- "genere_le": "2026-11-07T10:10:47+00:00",
+ "genere_le": "2026-11-08T10:24:12+00:00",
  "modele_version": "logit-iso-1.0",
  "produits": {
   "e10": {
@@ -492,14 +492,14 @@
        "n": 649
       },
       {
-       "annonce": 0.577,
-       "observe": 0.691,
-       "n": 207
+       "annonce": 0.578,
+       "observe": 0.688,
+       "n": 208
       },
       {
-       "annonce": 0.715,
-       "observe": 0.691,
-       "n": 110
+       "annonce": 0.716,
+       "observe": 0.697,
+       "n": 109
       }
      ],
      "par_annee": [
