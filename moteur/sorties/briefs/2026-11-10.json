@@ -1,0 +1,312 @@
+{
+ "date": "2026-11-10",
+ "genere_le": "2026-11-10T11:13:37+00:00",
+ "en_retard": true,
+ "prix": {
+  "e10": {
+   "nom": "Essence 95 E10",
+   "prix": 1.905,
+   "depuis": "2026-11-04",
+   "prochain": {
+    "date": "2026-11-11",
+    "prix": 1.842
+   }
+  },
+  "e98": {
+   "nom": "Essence 98 E5",
+   "prix": 2.03,
+   "depuis": "2026-11-04",
+   "prochain": {
+    "date": "2026-11-11",
+    "prix": 1.941
+   }
+  },
+  "b7": {
+   "nom": "Diesel B7",
+   "prix": 2.369,
+   "depuis": "2026-11-07",
+   "prochain": null
+  }
+ },
+ "previsions": [
+  {
+   "emise_le": "2026-11-10T11:13:31+00:00",
+   "produit": "e10",
+   "horizon": 1,
+   "date_cible": "2026-11-11",
+   "prix_reference": 1.905,
+   "modele_version": "logit-iso-1.0",
+   "certain": true,
+   "statut": "reel",
+   "p_baisse": 1.0,
+   "p_stable": 0.0,
+   "p_hausse": 0.0,
+   "scenario": -1,
+   "variation_estimee": -0.063,
+   "amplitude": 0.063,
+   "intervalle_bas": -0.063,
+   "intervalle_haut": -0.063,
+   "confiance": 1.0,
+   "explication": "Prix officiel déjà publié par le SPF : 1,842 €/L (−6,3 c/L)."
+  },
+  {
+   "emise_le": "2026-11-10T11:13:31+00:00",
+   "produit": "e10",
+   "horizon": 2,
+   "date_cible": "2026-11-12",
+   "prix_reference": 1.905,
+   "modele_version": "logit-iso-1.0",
+   "certain": true,
+   "statut": "reel",
+   "p_baisse": 1.0,
+   "p_stable": 0.0,
+   "p_hausse": 0.0,
+   "scenario": -1,
+   "variation_estimee": -0.063,
+   "amplitude": 0.063,
+   "intervalle_bas": -0.063,
+   "intervalle_haut": -0.063,
+   "confiance": 1.0,
+   "explication": "Prix officiel déjà publié par le SPF : 1,842 €/L (−6,3 c/L)."
+  },
+  {
+   "emise_le": "2026-11-10T11:13:31+00:00",
+   "produit": "e10",
+   "horizon": 3,
+   "date_cible": "2026-11-13",
+   "prix_reference": 1.905,
+   "modele_version": "logit-iso-1.0",
+   "certain": false,
+   "statut": "previsionnel",
+   "p_baisse": 0.6943,
+   "p_stable": 0.3026,
+   "p_hausse": 0.0031,
+   "scenario": -1,
+   "variation_estimee": -0.0479,
+   "intervalle_bas": -0.0699,
+   "intervalle_haut": 0.0,
+   "amplitude": 0.0479,
+   "confiance": 0.6943,
+   "explication": "Depuis le dernier changement (mercredi 4 novembre), la cotation essence RBOB New York convertie en euros a varié de −5,7 c/L. Le SPF ajuste le prix quand cet écart dépasse un seuil : une baisse est le scénario le plus probable (69 %)."
+  },
+  {
+   "emise_le": "2026-11-10T11:13:31+00:00",
+   "produit": "e98",
+   "horizon": 1,
+   "date_cible": "2026-11-11",
+   "prix_reference": 2.03,
+   "modele_version": "logit-iso-1.0",
+   "certain": true,
+   "statut": "reel",
+   "p_baisse": 1.0,
+   "p_stable": 0.0,
+   "p_hausse": 0.0,
+   "scenario": -1,
+   "variation_estimee": -0.089,
+   "amplitude": 0.089,
+   "intervalle_bas": -0.089,
+   "intervalle_haut": -0.089,
+   "confiance": 1.0,
+   "explication": "Prix officiel déjà publié par le SPF : 1,941 €/L (−8,9 c/L)."
+  },
+  {
+   "emise_le": "2026-11-10T11:13:31+00:00",
+   "produit": "e98",
+   "horizon": 2,
+   "date_cible": "2026-11-12",
+   "prix_reference": 2.03,
+   "modele_version": "logit-iso-1.0",
+   "certain": true,
+   "statut": "reel",
+   "p_baisse": 1.0,
+   "p_stable": 0.0,
+   "p_hausse": 0.0,
+   "scenario": -1,
+   "variation_estimee": -0.089,
+   "amplitude": 0.089,
+   "intervalle_bas": -0.089,
+   "intervalle_haut": -0.089,
+   "confiance": 1.0,
+   "explication": "Prix officiel déjà publié par le SPF : 1,941 €/L (−8,9 c/L)."
+  },
+  {
+   "emise_le": "2026-11-10T11:13:31+00:00",
+   "produit": "e98",
+   "horizon": 3,
+   "date_cible": "2026-11-13",
+   "prix_reference": 2.03,
+   "modele_version": "logit-iso-1.0",
+   "certain": false,
+   "statut": "previsionnel",
+   "p_baisse": 0.6982,
+   "p_stable": 0.2994,
+   "p_hausse": 0.0023,
+   "scenario": -1,
+   "variation_estimee": -0.0499,
+   "intervalle_bas": -0.0761,
+   "intervalle_haut": 0.0,
+   "amplitude": 0.0499,
+   "confiance": 0.6982,
+   "explication": "Depuis le dernier changement (mercredi 4 novembre), la cotation essence RBOB New York convertie en euros a varié de −5,7 c/L. Le SPF ajuste le prix quand cet écart dépasse un seuil : une baisse est le scénario le plus probable (70 %)."
+  },
+  {
+   "emise_le": "2026-11-10T11:13:31+00:00",
+   "produit": "b7",
+   "horizon": 1,
+   "date_cible": "2026-11-11",
+   "prix_reference": 2.369,
+   "modele_version": "logit-iso-1.0",
+   "certain": false,
+   "statut": "previsionnel",
+   "p_baisse": 0.1437,
+   "p_stable": 0.8255,
+   "p_hausse": 0.0309,
+   "scenario": 0,
+   "variation_estimee": 0.0,
+   "intervalle_bas": -0.0231,
+   "intervalle_haut": 0.0,
+   "amplitude": 0.0359,
+   "confiance": 0.8255,
+   "explication": "Depuis le dernier changement (samedi 7 novembre), la cotation diesel/fioul New York convertie en euros a varié de −3,0 c/L. L'écart reste sous le seuil qui déclenche un ajustement : le plus probable est un prix inchangé (83 %). Risque de baisse : 14 %."
+  },
+  {
+   "emise_le": "2026-11-10T11:13:31+00:00",
+   "produit": "b7",
+   "horizon": 2,
+   "date_cible": "2026-11-12",
+   "prix_reference": 2.369,
+   "modele_version": "logit-iso-1.0",
+   "certain": false,
+   "statut": "previsionnel",
+   "p_baisse": 0.222,
+   "p_stable": 0.6713,
+   "p_hausse": 0.1067,
+   "scenario": 0,
+   "variation_estimee": 0.0,
+   "intervalle_bas": -0.0408,
+   "intervalle_haut": 0.0093,
+   "amplitude": 0.0375,
+   "confiance": 0.6713,
+   "explication": "Depuis le dernier changement (samedi 7 novembre), la cotation diesel/fioul New York convertie en euros a varié de −3,0 c/L. L'écart reste sous le seuil qui déclenche un ajustement : le plus probable est un prix inchangé (67 %). Risque de baisse : 22 %."
+  },
+  {
+   "emise_le": "2026-11-10T11:13:31+00:00",
+   "produit": "b7",
+   "horizon": 3,
+   "date_cible": "2026-11-13",
+   "prix_reference": 2.369,
+   "modele_version": "logit-iso-1.0",
+   "certain": false,
+   "statut": "previsionnel",
+   "p_baisse": 0.4436,
+   "p_stable": 0.474,
+   "p_hausse": 0.0824,
+   "scenario": 0,
+   "variation_estimee": 0.0,
+   "intervalle_bas": -0.0584,
+   "intervalle_haut": 0.0043,
+   "amplitude": 0.0381,
+   "confiance": 0.474,
+   "explication": "Depuis le dernier changement (samedi 7 novembre), la cotation diesel/fioul New York convertie en euros a varié de −3,0 c/L. L'écart reste sous le seuil qui déclenche un ajustement : le plus probable est un prix inchangé (47 %). Risque de baisse : 44 %."
+  }
+ ],
+ "marche": [
+  {
+   "serie": "brent",
+   "nom": "Brent (baril)",
+   "unite": "USD/bbl",
+   "valeur": 92.57,
+   "date": "2026-11-09",
+   "precedent": 98.32,
+   "date_precedent": "2026-11-06",
+   "variation_pct": -5.85
+  },
+  {
+   "serie": "ho",
+   "nom": "Gasoil New York",
+   "unite": "USD/gal",
+   "valeur": 4.2148,
+   "date": "2026-11-09",
+   "precedent": 4.3317,
+   "date_precedent": "2026-11-06",
+   "variation_pct": -2.7
+  },
+  {
+   "serie": "rbob",
+   "nom": "Essence New York",
+   "unite": "USD/gal",
+   "valeur": 2.6509,
+   "date": "2026-11-09",
+   "precedent": 2.7767,
+   "date_precedent": "2026-11-06",
+   "variation_pct": -4.53
+  },
+  {
+   "serie": "eurusd",
+   "nom": "Euro en dollars",
+   "unite": "USD",
+   "valeur": 1.1193,
+   "date": "2026-11-09",
+   "precedent": 1.1165,
+   "date_precedent": "2026-11-06",
+   "variation_pct": 0.25
+  }
+ ],
+ "actualites": [
+  {
+   "titre": "Pétrole : le prix du baril de Brent repasse sous les 90 dollars",
+   "media": "Le Figaro",
+   "lien": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPbjNEclpBRE9nS3RlMmo5Z2dMd2FwSkp5UW1VNFg4ME5vSGU5dHJLMW5xWWtHSl9jT1lXd0k4eElnTjFCUGxSeDJFd0h1NThCREFCUWlCY3E4dDF3ZnZXbXpyaXZNMXM4am9rQWJ5U3BmajZ3Z1FKNmdaaTZlRVhNb19UYjZpaFc1aTd5UHp0NjNza2FwVGRTSVRnUHhsNTRIdExMc0pxRlRrUQ?oc=5",
+   "publie_le": "2026-11-10T09:55+00:00",
+   "mots_cles": [
+    "brent",
+    "baril",
+    "petrole"
+   ]
+  },
+  {
+   "titre": "Le prix de l’essence et du diesel en baisse à la pompe",
+   "media": "7sur7.be",
+   "lien": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPbGhkRHFMbnZtcktSVmhFYTlrZk5hNHlwaF96U25yX3ZhQ2ZvcExRSUFWM3JFNzRCT080dnBtTUhJeGxhVnR4eWpPUVJtQWs3UVhzOUN3SzhVVWstS29xTk1JSUpIVndiOFdoYTRwSS0wemRFa3ZRaDM1bS1rWDJ5RVhvUkJ3dllxV1ZsTkxjb1dEZ3dMcHBxeQ?oc=5",
+   "publie_le": "2026-11-10T09:03+00:00",
+   "mots_cles": [
+    "diesel",
+    "a la pompe",
+    "essence"
+   ]
+  },
+  {
+   "titre": "\"On continuera s'il le faut\": après la baisse spectaculaire de 22 centimes à la pompe, le gouvernement ouvert à un nouveau déblocage des stocks stratégiques de carburant",
+   "media": "BFM",
+   "lien": "https://news.google.com/rss/articles/CBMi2AJBVV95cUxQclVuSHlYQnNBZXJ1VFhfZWhhbWVFZnUzNWlNTFZWTU9oUFJKSGowZjBtaU10bGs0aDlodzdqMm80YVBQSWNhQzVyQnZkN05iNF91WWN5bFZPc3NHUzV3REVncVhVSUFLdHBfcTFkWkd0b2IxdThheVRpdHhCNThrOHBZa2pYMTRnVXBrTXpINVN4ZU9vUXZSVWx3S2JQM1p5eGR2WXZvTmxpekZzZUtVTVlUNWM4bzhIVWRvcTJOblR4TGNCRnJNOXh5eEpwWldwQWVtSW1qd0dyRmZqYUxhcEo2MEIzS3dLU2F6T1BfWE8xZ2Vjd29WeTVzeTZyN0F0ZEJVZllFZkxyekFnMDlSWUk3eUdMaWpxeWpTSjNieEhtalpkUnR4Vl84LWtDXzVHUmYxNFY5X1ZWaUY3dHNCYUthMnJPUFZQWml3dTdBUDJUc1czdTNfNA?oc=5",
+   "publie_le": "2026-11-10T08:59+00:00",
+   "mots_cles": [
+    "carburant",
+    "a la pompe"
+   ]
+  },
+  {
+   "titre": "Du diesel à partir de 1,99€/L ce mardi 10 novembre : jusqu'à 0,18 € de moins par litre dans les stations-service les moins chères",
+   "media": "Turbo.fr",
+   "lien": "https://news.google.com/rss/articles/CBMihAJBVV95cUxQQXhfYTZUMG1oQkQzMDRMSnRRWlI0bGhlWHZLVHJPOElKY1ppMjQzd0lRU2ZIYkU3aFIzVUxlbXJ6NW1EYXdfVi1uSWpXVjRHOF9VUTFvVVdjbHFmVXFXaWhEaURtc2R4QWxENnNsS2g5ckFjR2Vtbmk0dlljMGZiWVJBMzRPc19LQUd6MTVaZE9DVHZiMkdTSkpKSURPRGkySFJqdGwyM1dWSUs5a0F6N1dmNEFIVFZOWGFQM0hPRVI5S0V5WVk5bTJ4dmE0SUpHZlFncVN5ek05MnR2VHZ2aXZrQlN4a2J5TTd1TkxyRnFFYnlUS1RVejBMWDVxZWtpWXdEeQ?oc=5",
+   "publie_le": "2026-11-10T06:45+00:00",
+   "mots_cles": [
+    "diesel",
+    "stations-service"
+   ]
+  },
+  {
+   "titre": "Pétrole : Trump rassure sur l’Iran, le Brent à 91,88 dollars le baril",
+   "media": "Le Revenu",
+   "lien": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQR2lyazRRM2RpWWRhb2w0Rm5VUHh6ZGMzcTNUaUhPOUV0a1ZIbXE5Y2drM3NZRGhNd2VfZjQ5b2F5clRuREZMLTFNNzBPYzhBeTZsY05LamNhMGFKcUZCdU1BMHdTbU9xSFEzZk5xV1I1ZVVzUkJiNGwyNlZIalRxbkRLYXFhZncwcUgwcHEwY1ItYWlGZnJadGo0TTJaT3NESm8ybHVR?oc=5",
+   "publie_le": "2026-11-10T06:31+00:00",
+   "mots_cles": [
+    "brent",
+    "baril",
+    "petrole"
+   ]
+  }
+ ],
+ "actualites_erreur": "",
+ "actualites_source": "Google News (édition Belgique, français), sélection automatique par mots-clés"
+}
