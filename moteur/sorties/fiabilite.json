@@ -1,5 +1,5 @@
 {
- "genere_le": "2026-11-14T10:27:12+00:00",
+ "genere_le": "2026-11-15T10:54:48+00:00",
  "modele_version": "logit-iso-1.0",
  "produits": {
   "e10": {
@@ -96,11 +96,11 @@
      ],
      "jours_incertains": 2417,
      "changements_reels": 583,
-     "brier_modele": 0.324,
+     "brier_modele": 0.3239,
      "brier_naif": 0.4824,
      "brier_climatologie": 0.3904,
      "gain_vs_climatologie_pct": 17.0,
-     "gain_vs_naif_pct": 32.8,
+     "gain_vs_naif_pct": 32.9,
      "meilleur_que_references": true,
      "changements_reperes_pct": 13.2,
      "alertes": 121,
@@ -111,18 +111,18 @@
      "calibration": [
       {
        "annonce": 0.068,
-       "observe": 0.094,
-       "n": 620
+       "observe": 0.093,
+       "n": 621
       },
       {
-       "annonce": 0.152,
+       "annonce": 0.153,
        "observe": 0.161,
        "n": 1077
       },
       {
        "annonce": 0.376,
-       "observe": 0.444,
-       "n": 583
+       "observe": 0.445,
+       "n": 582
       },
       {
        "annonce": 0.567,
@@ -173,7 +173,7 @@
       },
       {
        "annee": 2026,
-       "gain_pct": 19.9,
+       "gain_pct": 20.0,
        "changements": 85
       }
      ]
@@ -451,7 +451,7 @@
       },
       {
        "annee": 2026,
-       "gain_pct": 18.1,
+       "gain_pct": 18.2,
        "changements": 85
       }
      ]
@@ -487,19 +487,19 @@
        "n": 1444
       },
       {
-       "annonce": 0.404,
+       "annonce": 0.403,
        "observe": 0.486,
        "n": 650
       },
       {
-       "annonce": 0.578,
-       "observe": 0.697,
-       "n": 208
+       "annonce": 0.577,
+       "observe": 0.7,
+       "n": 207
       },
       {
        "annonce": 0.715,
-       "observe": 0.7,
-       "n": 110
+       "observe": 0.694,
+       "n": 111
       }
      ],
      "par_annee": [
