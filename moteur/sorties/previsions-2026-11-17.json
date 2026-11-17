@@ -1,6 +1,6 @@
 [
  {
-  "emise_le": "2026-11-17T11:53:55+00:00",
+  "emise_le": "2026-11-17T22:34:43+00:00",
   "produit": "e10",
   "horizon": 1,
   "date_cible": "2026-11-18",
@@ -20,7 +20,7 @@
   "explication": "Prix officiel déjà publié par le SPF : 1,819 €/L (−2,3 c/L)."
  },
  {
-  "emise_le": "2026-11-17T11:53:55+00:00",
+  "emise_le": "2026-11-17T22:34:43+00:00",
   "produit": "e10",
   "horizon": 2,
   "date_cible": "2026-11-19",
@@ -40,7 +40,7 @@
   "explication": "Depuis le dernier changement (mercredi 11 novembre), la cotation essence RBOB New York convertie en euros a varié de −1,7 c/L. L'écart reste sous le seuil qui déclenche un ajustement : le plus probable est un prix inchangé (79 %). Risque de baisse : 9 %."
  },
  {
-  "emise_le": "2026-11-17T11:53:55+00:00",
+  "emise_le": "2026-11-17T22:34:43+00:00",
   "produit": "e10",
   "horizon": 3,
   "date_cible": "2026-11-20",
@@ -60,7 +60,7 @@
   "explication": "Depuis le dernier changement (mercredi 11 novembre), la cotation essence RBOB New York convertie en euros a varié de −1,7 c/L. L'écart reste sous le seuil qui déclenche un ajustement : le plus probable est un prix inchangé (57 %). Risque de baisse : 24 %."
  },
  {
-  "emise_le": "2026-11-17T11:53:55+00:00",
+  "emise_le": "2026-11-17T22:34:43+00:00",
   "produit": "e98",
   "horizon": 1,
   "date_cible": "2026-11-18",
@@ -80,7 +80,7 @@
   "explication": "Prix officiel déjà publié par le SPF : 1,913 €/L (−2,8 c/L)."
  },
  {
-  "emise_le": "2026-11-17T11:53:55+00:00",
+  "emise_le": "2026-11-17T22:34:43+00:00",
   "produit": "e98",
   "horizon": 2,
   "date_cible": "2026-11-19",
@@ -100,7 +100,7 @@
   "explication": "Depuis le dernier changement (mercredi 11 novembre), la cotation essence RBOB New York convertie en euros a varié de −1,7 c/L. L'écart reste sous le seuil qui déclenche un ajustement : le plus probable est un prix inchangé (77 %). Risque de baisse : 11 %."
  },
  {
-  "emise_le": "2026-11-17T11:53:55+00:00",
+  "emise_le": "2026-11-17T22:34:43+00:00",
   "produit": "e98",
   "horizon": 3,
   "date_cible": "2026-11-20",
@@ -120,7 +120,7 @@
   "explication": "Depuis le dernier changement (mercredi 11 novembre), la cotation essence RBOB New York convertie en euros a varié de −1,7 c/L. L'écart reste sous le seuil qui déclenche un ajustement : le plus probable est un prix inchangé (57 %). Risque de baisse : 27 %."
  },
  {
-  "emise_le": "2026-11-17T11:53:55+00:00",
+  "emise_le": "2026-11-17T22:34:43+00:00",
   "produit": "b7",
   "horizon": 1,
   "date_cible": "2026-11-18",
@@ -140,7 +140,7 @@
   "explication": "Depuis le dernier changement (samedi 14 novembre), la cotation diesel/fioul New York convertie en euros a varié de −4,3 c/L. L'écart reste sous le seuil qui déclenche un ajustement : le plus probable est un prix inchangé (83 %). Risque de baisse : 17 %."
  },
  {
-  "emise_le": "2026-11-17T11:53:55+00:00",
+  "emise_le": "2026-11-17T22:34:43+00:00",
   "produit": "b7",
   "horizon": 2,
   "date_cible": "2026-11-19",
@@ -160,7 +160,7 @@
   "explication": "Depuis le dernier changement (samedi 14 novembre), la cotation diesel/fioul New York convertie en euros a varié de −4,3 c/L. L'écart reste sous le seuil qui déclenche un ajustement : le plus probable est un prix inchangé (64 %). Risque de baisse : 35 %."
  },
  {
-  "emise_le": "2026-11-17T11:53:55+00:00",
+  "emise_le": "2026-11-17T22:34:43+00:00",
   "produit": "b7",
   "horizon": 3,
   "date_cible": "2026-11-20",
