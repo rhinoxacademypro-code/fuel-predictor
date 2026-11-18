@@ -1,0 +1,307 @@
+{
+ "date": "2026-11-18",
+ "genere_le": "2026-11-18T11:44:16+00:00",
+ "en_retard": true,
+ "prix": {
+  "e10": {
+   "nom": "Essence 95 E10",
+   "prix": 1.819,
+   "depuis": "2026-11-18",
+   "prochain": null
+  },
+  "e98": {
+   "nom": "Essence 98 E5",
+   "prix": 1.913,
+   "depuis": "2026-11-18",
+   "prochain": null
+  },
+  "b7": {
+   "nom": "Diesel B7",
+   "prix": 2.332,
+   "depuis": "2026-11-14",
+   "prochain": null
+  }
+ },
+ "previsions": [
+  {
+   "emise_le": "2026-11-18T11:44:05+00:00",
+   "produit": "e10",
+   "horizon": 1,
+   "date_cible": "2026-11-19",
+   "prix_reference": 1.819,
+   "modele_version": "logit-iso-1.0",
+   "certain": false,
+   "statut": "previsionnel",
+   "p_baisse": 0.0247,
+   "p_stable": 0.8857,
+   "p_hausse": 0.0896,
+   "scenario": 0,
+   "variation_estimee": 0.0,
+   "intervalle_bas": 0.0,
+   "intervalle_haut": 0.0,
+   "amplitude": 0.0188,
+   "confiance": 0.8857,
+   "explication": "Depuis le dernier changement (mercredi 18 novembre), la cotation essence RBOB New York convertie en euros a varié de +0,1 c/L. L'écart reste sous le seuil qui déclenche un ajustement : le plus probable est un prix inchangé (89 %). Risque de hausse : 9 %."
+  },
+  {
+   "emise_le": "2026-11-18T11:44:05+00:00",
+   "produit": "e10",
+   "horizon": 2,
+   "date_cible": "2026-11-20",
+   "prix_reference": 1.819,
+   "modele_version": "logit-iso-1.0",
+   "certain": false,
+   "statut": "previsionnel",
+   "p_baisse": 0.0571,
+   "p_stable": 0.7925,
+   "p_hausse": 0.1504,
+   "scenario": 0,
+   "variation_estimee": 0.0,
+   "intervalle_bas": 0.0,
+   "intervalle_haut": 0.0128,
+   "amplitude": 0.0203,
+   "confiance": 0.7925,
+   "explication": "Depuis le dernier changement (mercredi 18 novembre), la cotation essence RBOB New York convertie en euros a varié de +0,1 c/L. L'écart reste sous le seuil qui déclenche un ajustement : le plus probable est un prix inchangé (79 %). Risque de hausse : 15 %."
+  },
+  {
+   "emise_le": "2026-11-18T11:44:05+00:00",
+   "produit": "e10",
+   "horizon": 3,
+   "date_cible": "2026-11-21",
+   "prix_reference": 1.819,
+   "modele_version": "logit-iso-1.0",
+   "certain": false,
+   "statut": "previsionnel",
+   "p_baisse": 0.1588,
+   "p_stable": 0.5679,
+   "p_hausse": 0.2733,
+   "scenario": 0,
+   "variation_estimee": 0.0,
+   "intervalle_bas": -0.0172,
+   "intervalle_haut": 0.0286,
+   "amplitude": 0.0212,
+   "confiance": 0.5679,
+   "explication": "Depuis le dernier changement (mercredi 18 novembre), la cotation essence RBOB New York convertie en euros a varié de +0,1 c/L. L'écart reste sous le seuil qui déclenche un ajustement : le plus probable est un prix inchangé (57 %). Risque de hausse : 27 %."
+  },
+  {
+   "emise_le": "2026-11-18T11:44:05+00:00",
+   "produit": "e98",
+   "horizon": 1,
+   "date_cible": "2026-11-19",
+   "prix_reference": 1.913,
+   "modele_version": "logit-iso-1.0",
+   "certain": false,
+   "statut": "previsionnel",
+   "p_baisse": 0.031,
+   "p_stable": 0.8902,
+   "p_hausse": 0.0788,
+   "scenario": 0,
+   "variation_estimee": 0.0,
+   "intervalle_bas": 0.0,
+   "intervalle_haut": 0.0,
+   "amplitude": 0.0202,
+   "confiance": 0.8902,
+   "explication": "Depuis le dernier changement (mercredi 18 novembre), la cotation essence RBOB New York convertie en euros a varié de +0,1 c/L. L'écart reste sous le seuil qui déclenche un ajustement : le plus probable est un prix inchangé (89 %). Risque de hausse : 8 %."
+  },
+  {
+   "emise_le": "2026-11-18T11:44:05+00:00",
+   "produit": "e98",
+   "horizon": 2,
+   "date_cible": "2026-11-20",
+   "prix_reference": 1.913,
+   "modele_version": "logit-iso-1.0",
+   "certain": false,
+   "statut": "previsionnel",
+   "p_baisse": 0.0693,
+   "p_stable": 0.8,
+   "p_hausse": 0.1307,
+   "scenario": 0,
+   "variation_estimee": 0.0,
+   "intervalle_bas": 0.0,
+   "intervalle_haut": 0.0086,
+   "amplitude": 0.0221,
+   "confiance": 0.8,
+   "explication": "Depuis le dernier changement (mercredi 18 novembre), la cotation essence RBOB New York convertie en euros a varié de +0,1 c/L. L'écart reste sous le seuil qui déclenche un ajustement : le plus probable est un prix inchangé (80 %). Risque de hausse : 13 %."
+  },
+  {
+   "emise_le": "2026-11-18T11:44:05+00:00",
+   "produit": "e98",
+   "horizon": 3,
+   "date_cible": "2026-11-21",
+   "prix_reference": 1.913,
+   "modele_version": "logit-iso-1.0",
+   "certain": false,
+   "statut": "previsionnel",
+   "p_baisse": 0.1851,
+   "p_stable": 0.5686,
+   "p_hausse": 0.2463,
+   "scenario": 0,
+   "variation_estimee": 0.0,
+   "intervalle_bas": -0.0231,
+   "intervalle_haut": 0.0298,
+   "amplitude": 0.0231,
+   "confiance": 0.5686,
+   "explication": "Depuis le dernier changement (mercredi 18 novembre), la cotation essence RBOB New York convertie en euros a varié de +0,1 c/L. L'écart reste sous le seuil qui déclenche un ajustement : le plus probable est un prix inchangé (57 %). Risque de hausse : 25 %."
+  },
+  {
+   "emise_le": "2026-11-18T11:44:05+00:00",
+   "produit": "b7",
+   "horizon": 1,
+   "date_cible": "2026-11-19",
+   "prix_reference": 2.332,
+   "modele_version": "logit-iso-1.0",
+   "certain": false,
+   "statut": "previsionnel",
+   "p_baisse": 0.2368,
+   "p_stable": 0.7612,
+   "p_hausse": 0.002,
+   "scenario": 0,
+   "variation_estimee": 0.0,
+   "intervalle_bas": -0.0551,
+   "intervalle_haut": 0.0,
+   "amplitude": 0.0502,
+   "confiance": 0.7612,
+   "explication": "Depuis le dernier changement (samedi 14 novembre), la cotation diesel/fioul New York convertie en euros a varié de −4,9 c/L. L'écart reste sous le seuil qui déclenche un ajustement : le plus probable est un prix inchangé (76 %). Risque de baisse : 24 %."
+  },
+  {
+   "emise_le": "2026-11-18T11:44:05+00:00",
+   "produit": "b7",
+   "horizon": 2,
+   "date_cible": "2026-11-20",
+   "prix_reference": 2.332,
+   "modele_version": "logit-iso-1.0",
+   "certain": false,
+   "statut": "previsionnel",
+   "p_baisse": 0.5813,
+   "p_stable": 0.4149,
+   "p_hausse": 0.0038,
+   "scenario": -1,
+   "variation_estimee": -0.0513,
+   "intervalle_bas": -0.0762,
+   "intervalle_haut": 0.0,
+   "amplitude": 0.0513,
+   "confiance": 0.5813,
+   "explication": "Depuis le dernier changement (samedi 14 novembre), la cotation diesel/fioul New York convertie en euros a varié de −4,9 c/L. Le SPF ajuste le prix quand cet écart dépasse un seuil : une baisse est le scénario le plus probable (58 %)."
+  },
+  {
+   "emise_le": "2026-11-18T11:44:05+00:00",
+   "produit": "b7",
+   "horizon": 3,
+   "date_cible": "2026-11-21",
+   "prix_reference": 2.332,
+   "modele_version": "logit-iso-1.0",
+   "certain": false,
+   "statut": "previsionnel",
+   "p_baisse": 0.6442,
+   "p_stable": 0.3516,
+   "p_hausse": 0.0041,
+   "scenario": -1,
+   "variation_estimee": -0.0511,
+   "intervalle_bas": -0.0786,
+   "intervalle_haut": 0.0,
+   "amplitude": 0.0511,
+   "confiance": 0.6442,
+   "explication": "Depuis le dernier changement (samedi 14 novembre), la cotation diesel/fioul New York convertie en euros a varié de −4,9 c/L. Le SPF ajuste le prix quand cet écart dépasse un seuil : une baisse est le scénario le plus probable (64 %)."
+  }
+ ],
+ "marche": [
+  {
+   "serie": "brent",
+   "nom": "Brent (baril)",
+   "unite": "USD/bbl",
+   "valeur": 93.14,
+   "date": "2026-11-17",
+   "precedent": 92.44,
+   "date_precedent": "2026-11-16",
+   "variation_pct": 0.76
+  },
+  {
+   "serie": "ho",
+   "nom": "Gasoil New York",
+   "unite": "USD/gal",
+   "valeur": 4.0475,
+   "date": "2026-11-17",
+   "precedent": 4.0818,
+   "date_precedent": "2026-11-16",
+   "variation_pct": -0.84
+  },
+  {
+   "serie": "rbob",
+   "nom": "Essence New York",
+   "unite": "USD/gal",
+   "valeur": 2.5349,
+   "date": "2026-11-17",
+   "precedent": 2.5379,
+   "date_precedent": "2026-11-16",
+   "variation_pct": -0.12
+  },
+  {
+   "serie": "eurusd",
+   "nom": "Euro en dollars",
+   "unite": "USD",
+   "valeur": 1.0989,
+   "date": "2026-11-17",
+   "precedent": 1.1014,
+   "date_precedent": "2026-11-16",
+   "variation_pct": -0.23
+  }
+ ],
+ "actualites": [
+  {
+   "titre": "Malawi : à court de carburant, les stations-services rationnent l'essence",
+   "media": "France 24",
+   "lien": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOYUxjQmU1V1BkMFFWU2l6b3NTOUx5b2M5QjVDeVNwZlJ4b1owNUoyT3NPUTdPMDVrckNjLUVxWEMySkk2N2RmSC04SWl4UzhxaXpENExURGR0aVpFXzluWmtTVC1Pc1RIZFdqaWVPUW9JR0pNTUhfcHFmOU1BQzdhSVV4dk9odzBTbUtkOGk2ZDlNLThwSS1iU1Q5XzloazdhZ2lMUUhUNUVoNi1OYUdXVFF5cUlvWE5USXJ6TkY5dzQ?oc=5",
+   "publie_le": "2026-11-18T11:22+00:00",
+   "mots_cles": [
+    "carburant",
+    "stations-service",
+    "essence"
+   ]
+  },
+  {
+   "titre": "Le contrat de pétrole brut WTI à échéance décembre clôture en hausse de 0,29 dollar, soit 0,3 %, à 86,01 dollars le baril ; le Brent à échéance janvier s’affichait en dernier lieu en hausse de 0,71 dollar, soit 0,8 %, à 93,15 dollars",
+   "media": "Zonebourse Suisse",
+   "lien": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQd0otYURJb1FZalpiVHU3X3BEVHMyWWloMzdvS1R4WXRoMTR0Q3VOQnV5QzNoMENjZjM0U2JkRlFyTnhQSF9tLTdPQzdOUzhGdWV5RVRlcW1hZllabkJQU1R3VFYyTVhmNWhxSlpmSk80MmtUUFFjRnVWSVRQdGZPVXc3M1haLUUtX0lESFF2Ui16UjlDQnRINzVQdWxUeE1iTFVTamtHWmdvV04xaXFVWGZkUnJ6WTN5UHl3a1pFQkc5MV81dnhEeUh3Z0dvM0Z2NkpIWWJxZUVNVW5zdmZxRllSbGlhRklVSl90SQ?oc=5",
+   "publie_le": "2026-11-17T19:45+00:00",
+   "mots_cles": [
+    "brent",
+    "baril",
+    "petrole",
+    "wti"
+   ]
+  },
+  {
+   "titre": "À la pompe: Le prix du diesel continue sa baisse au Luxembourg",
+   "media": "RTL Lëtzebuerg",
+   "lien": "https://news.google.com/rss/articles/CBMingFBVV95cUxPaXZtbGtDdzRUSi11YllPNHlUQUlENEpsbFhSYW9tMmxpeUdBa0FrZ1U4UVkyMUVHeWJzSUpENVhDYUpEeExzaW5aWERqczFaT1lQSjM0OHhJbUZaV0F5d0hreU4wWlBsRjdjQXRYaDIwczQ0U2Q4WlJEQUVjdWhtVldGTmlmVWJ5M1h0UEoxMUxOdm4xa1p4ZGxURmRMUQ?oc=5",
+   "publie_le": "2026-11-17T16:57+00:00",
+   "mots_cles": [
+    "diesel",
+    "a la pompe"
+   ]
+  },
+  {
+   "titre": "Prix des carburants en Belgique: l'essence et le mazout de chauffage continuent de diminuer (infographies)",
+   "media": "L'Avenir",
+   "lien": "https://news.google.com/rss/articles/CBMihwJBVV95cUxQZlBJeVFDclhrZC1aYnFCMV9IdFhOVE5ocVdZX0FMOUlkNkpySl9sMkFKUnR3Znl1dHh6N1dzRHNYQ3l5ZUpKTkc2QTlURjJVOTB1TnpVV0QzN2hJWnZKYWFjUE1aZTJNMWwyWjFCbDVwX2FEX2VHUDlxMzUyN2M1UjBqQkhXSDA0VGVNTFlEUXNOXzlmU0JObHFKUmJucF8yNHNqVHFmSlBFalJyLWJIUXZmdUVxbnVyMEVtV1lxUnhBdXlvX1NHdm5ZQTNKdnpPVFk2T1hCZlpJa3JsRW5sblJxWEhudXNVNU1ZZDQ0dGVyQWRiSEI2cTk1ZG9TTzlObnhxVXliUQ?oc=5",
+   "publie_le": "2026-11-17T08:10+00:00",
+   "mots_cles": [
+    "carburant",
+    "essence"
+   ]
+  },
+  {
+   "titre": "Reprise de l'approvisionnement en pétrole, le Brent se maintient autour de 92 US$ le baril",
+   "media": "IDNFinancials",
+   "lien": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOZ1JVUFJZNE9NVVVfTFgzT3BfbThSS3VxaTVoaUdVM2k1clFpWDBFTDVsS3h0ejlvWmVVaFFZaU9pQVItWlA5cjlFaDJpeTRQSzY3eUFRYzdFeS1MbzU2dURoZ1kxNmtoMHhPV1U0STFaR2RxbnJGa2h6dnpqTDUwY0ttZEpIdDEzcmdVazBpalYxUURfY3drTm91eHMtVC1aczF2dGQ0b2VZZFB0VDRjN0M2cll0WDZ5MFp3RzNNcVVLejFXazhKVGt6MUl6VjFOYmc?oc=5",
+   "publie_le": "2026-11-17T02:40+00:00",
+   "mots_cles": [
+    "brent",
+    "baril",
+    "petrole"
+   ]
+  }
+ ],
+ "actualites_erreur": "",
+ "actualites_source": "Google News (édition Belgique, français), sélection automatique par mots-clés"
+}

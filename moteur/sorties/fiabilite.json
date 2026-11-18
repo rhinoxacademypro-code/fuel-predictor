@@ -1,5 +1,5 @@
 {
- "genere_le": "2026-11-17T11:53:59+00:00",
+ "genere_le": "2026-11-18T11:44:10+00:00",
  "modele_version": "logit-iso-1.0",
  "produits": {
   "e10": {
@@ -8,13 +8,13 @@
     "1": {
      "periode": [
       "2019-01-02",
-      "2026-11-18"
+      "2026-11-19"
      ],
-     "jours_incertains": 1976,
+     "jours_incertains": 1977,
      "changements_reels": 295,
-     "brier_modele": 0.2356,
-     "brier_naif": 0.2986,
-     "brier_climatologie": 0.2659,
+     "brier_modele": 0.2354,
+     "brier_naif": 0.2984,
+     "brier_climatologie": 0.2658,
      "gain_vs_climatologie_pct": 11.4,
      "gain_vs_naif_pct": 21.1,
      "meilleur_que_references": true,
@@ -28,12 +28,12 @@
       {
        "annonce": 0.057,
        "observe": 0.068,
-       "n": 1062
+       "n": 1064
       },
       {
        "annonce": 0.178,
        "observe": 0.204,
-       "n": 794
+       "n": 793
       },
       {
        "annonce": 0.391,
@@ -92,13 +92,13 @@
     "2": {
      "periode": [
       "2019-01-01",
-      "2026-11-18"
+      "2026-11-19"
      ],
-     "jours_incertains": 2419,
-     "changements_reels": 584,
-     "brier_modele": 0.3243,
-     "brier_naif": 0.4828,
-     "brier_climatologie": 0.3907,
+     "jours_incertains": 2420,
+     "changements_reels": 585,
+     "brier_modele": 0.3248,
+     "brier_naif": 0.4835,
+     "brier_climatologie": 0.3911,
      "gain_vs_climatologie_pct": 17.0,
      "gain_vs_naif_pct": 32.8,
      "meilleur_que_references": true,
@@ -116,8 +116,8 @@
       },
       {
        "annonce": 0.152,
-       "observe": 0.16,
-       "n": 1079
+       "observe": 0.161,
+       "n": 1080
       },
       {
        "annonce": 0.376,
@@ -173,21 +173,21 @@
       },
       {
        "annee": 2026,
-       "gain_pct": 19.7,
-       "changements": 86
+       "gain_pct": 19.3,
+       "changements": 87
       }
      ]
     },
     "3": {
      "periode": [
       "2019-01-01",
-      "2026-11-18"
+      "2026-11-19"
      ],
-     "jours_incertains": 2832,
-     "changements_reels": 857,
-     "brier_modele": 0.3731,
-     "brier_naif": 0.6052,
-     "brier_climatologie": 0.4539,
+     "jours_incertains": 2833,
+     "changements_reels": 858,
+     "brier_modele": 0.3733,
+     "brier_naif": 0.6057,
+     "brier_climatologie": 0.4541,
      "gain_vs_climatologie_pct": 17.8,
      "gain_vs_naif_pct": 38.4,
      "meilleur_que_references": true,
@@ -206,12 +206,12 @@
       {
        "annonce": 0.199,
        "observe": 0.203,
-       "n": 1380
+       "n": 1382
       },
       {
        "annonce": 0.422,
-       "observe": 0.527,
-       "n": 516
+       "observe": 0.53,
+       "n": 515
       },
       {
        "annonce": 0.58,
@@ -262,17 +262,17 @@
       },
       {
        "annee": 2026,
-       "gain_pct": 19.7,
-       "changements": 123
+       "gain_pct": 19.6,
+       "changements": 124
       }
      ]
     }
    },
    "indicateur": {
-    "jours": 1974,
+    "jours": 1975,
     "verts": 21,
     "oranges": 13,
-    "gris": 1940,
+    "gris": 1941,
     "gain_moyen_par_recommandation_eur": 2.16,
     "recommandations_gagnantes_pct": 61.8,
     "recommandations_perdantes_pct": 2.9,
@@ -286,13 +286,13 @@
     "1": {
      "periode": [
       "2019-01-02",
-      "2026-11-18"
+      "2026-11-19"
      ],
-     "jours_incertains": 1976,
+     "jours_incertains": 1977,
      "changements_reels": 294,
-     "brier_modele": 0.2353,
-     "brier_naif": 0.2976,
-     "brier_climatologie": 0.2652,
+     "brier_modele": 0.2351,
+     "brier_naif": 0.2974,
+     "brier_climatologie": 0.265,
      "gain_vs_climatologie_pct": 11.3,
      "gain_vs_naif_pct": 20.9,
      "meilleur_que_references": true,
@@ -305,13 +305,13 @@
      "calibration": [
       {
        "annonce": 0.056,
-       "observe": 0.069,
-       "n": 1050
+       "observe": 0.068,
+       "n": 1052
       },
       {
        "annonce": 0.175,
        "observe": 0.201,
-       "n": 816
+       "n": 815
       },
       {
        "annonce": 0.39,
@@ -370,13 +370,13 @@
     "2": {
      "periode": [
       "2019-01-01",
-      "2026-11-18"
+      "2026-11-19"
      ],
-     "jours_incertains": 2419,
-     "changements_reels": 582,
-     "brier_modele": 0.3247,
-     "brier_naif": 0.4812,
-     "brier_climatologie": 0.3899,
+     "jours_incertains": 2420,
+     "changements_reels": 583,
+     "brier_modele": 0.3252,
+     "brier_naif": 0.4818,
+     "brier_climatologie": 0.3903,
      "gain_vs_climatologie_pct": 16.7,
      "gain_vs_naif_pct": 32.5,
      "meilleur_que_references": true,
@@ -394,8 +394,8 @@
       },
       {
        "annonce": 0.169,
-       "observe": 0.183,
-       "n": 1196
+       "observe": 0.184,
+       "n": 1197
       },
       {
        "annonce": 0.392,
@@ -451,23 +451,23 @@
       },
       {
        "annee": 2026,
-       "gain_pct": 17.8,
-       "changements": 86
+       "gain_pct": 17.5,
+       "changements": 87
       }
      ]
     },
     "3": {
      "periode": [
       "2019-01-01",
-      "2026-11-18"
+      "2026-11-19"
      ],
-     "jours_incertains": 2832,
-     "changements_reels": 854,
-     "brier_modele": 0.3718,
-     "brier_naif": 0.6031,
-     "brier_climatologie": 0.453,
+     "jours_incertains": 2833,
+     "changements_reels": 855,
+     "brier_modele": 0.3721,
+     "brier_naif": 0.6036,
+     "brier_climatologie": 0.4532,
      "gain_vs_climatologie_pct": 17.9,
-     "gain_vs_naif_pct": 38.3,
+     "gain_vs_naif_pct": 38.4,
      "meilleur_que_references": true,
      "changements_reperes_pct": 22.1,
      "alertes": 295,
@@ -484,11 +484,11 @@
       {
        "annonce": 0.185,
        "observe": 0.19,
-       "n": 1446
+       "n": 1447
       },
       {
        "annonce": 0.404,
-       "observe": 0.486,
+       "observe": 0.488,
        "n": 650
       },
       {
@@ -540,17 +540,17 @@
       },
       {
        "annee": 2026,
-       "gain_pct": 18.1,
-       "changements": 123
+       "gain_pct": 17.9,
+       "changements": 124
       }
      ]
     }
    },
    "indicateur": {
-    "jours": 1974,
+    "jours": 1975,
     "verts": 32,
     "oranges": 22,
-    "gris": 1920,
+    "gris": 1921,
     "gain_moyen_par_recommandation_eur": 1.92,
     "recommandations_gagnantes_pct": 61.1,
     "recommandations_perdantes_pct": 3.7,
@@ -564,15 +564,15 @@
     "1": {
      "periode": [
       "2019-01-02",
-      "2026-11-18"
+      "2026-11-19"
      ],
-     "jours_incertains": 1976,
+     "jours_incertains": 1977,
      "changements_reels": 377,
-     "brier_modele": 0.2764,
-     "brier_naif": 0.3816,
-     "brier_climatologie": 0.3295,
+     "brier_modele": 0.2763,
+     "brier_naif": 0.3814,
+     "brier_climatologie": 0.3294,
      "gain_vs_climatologie_pct": 16.1,
-     "gain_vs_naif_pct": 27.6,
+     "gain_vs_naif_pct": 27.5,
      "meilleur_que_references": true,
      "changements_reperes_pct": 16.4,
      "alertes": 104,
@@ -589,7 +589,7 @@
       {
        "annonce": 0.168,
        "observe": 0.211,
-       "n": 654
+       "n": 655
       },
       {
        "annonce": 0.361,
@@ -645,7 +645,7 @@
       },
       {
        "annee": 2026,
-       "gain_pct": 20.4,
+       "gain_pct": 20.3,
        "changements": 63
       }
      ]
@@ -653,19 +653,19 @@
     "2": {
      "periode": [
       "2019-01-01",
-      "2026-11-18"
+      "2026-11-19"
      ],
-     "jours_incertains": 2419,
+     "jours_incertains": 2420,
      "changements_reels": 740,
-     "brier_modele": 0.3657,
-     "brier_naif": 0.6118,
-     "brier_climatologie": 0.4707,
-     "gain_vs_climatologie_pct": 22.3,
+     "brier_modele": 0.3659,
+     "brier_naif": 0.6116,
+     "brier_climatologie": 0.4706,
+     "gain_vs_climatologie_pct": 22.2,
      "gain_vs_naif_pct": 40.2,
      "meilleur_que_references": true,
      "changements_reperes_pct": 35.8,
-     "alertes": 418,
-     "alertes_justes_pct": 63.4,
+     "alertes": 419,
+     "alertes_justes_pct": 63.2,
      "alertes_sens_oppose_pct": 2.9,
      "jours_certains": 460,
      "jours_certains_dementis": 2,
@@ -687,8 +687,8 @@
       },
       {
        "annonce": 0.566,
-       "observe": 0.612,
-       "n": 250
+       "observe": 0.61,
+       "n": 251
       },
       {
        "annonce": 0.801,
@@ -734,7 +734,7 @@
       },
       {
        "annee": 2026,
-       "gain_pct": 29.3,
+       "gain_pct": 28.8,
        "changements": 122
       }
      ]
@@ -742,19 +742,19 @@
     "3": {
      "periode": [
       "2019-01-01",
-      "2026-11-18"
+      "2026-11-19"
      ],
-     "jours_incertains": 2832,
+     "jours_incertains": 2833,
      "changements_reels": 1076,
-     "brier_modele": 0.4043,
-     "brier_naif": 0.7599,
-     "brier_climatologie": 0.5315,
+     "brier_modele": 0.4044,
+     "brier_naif": 0.7596,
+     "brier_climatologie": 0.5313,
      "gain_vs_climatologie_pct": 23.9,
      "gain_vs_naif_pct": 46.8,
      "meilleur_que_references": true,
      "changements_reperes_pct": 38.6,
-     "alertes": 587,
-     "alertes_justes_pct": 70.7,
+     "alertes": 588,
+     "alertes_justes_pct": 70.6,
      "alertes_sens_oppose_pct": 4.4,
      "jours_certains": 47,
      "jours_certains_dementis": 1,
@@ -776,8 +776,8 @@
       },
       {
        "annonce": 0.559,
-       "observe": 0.618,
-       "n": 246
+       "observe": 0.615,
+       "n": 247
       },
       {
        "annonce": 0.822,
@@ -823,17 +823,17 @@
       },
       {
        "annee": 2026,
-       "gain_pct": 31.8,
+       "gain_pct": 31.5,
        "changements": 172
       }
      ]
     }
    },
    "indicateur": {
-    "jours": 1974,
+    "jours": 1975,
     "verts": 125,
     "oranges": 54,
-    "gris": 1795,
+    "gris": 1796,
     "gain_moyen_par_recommandation_eur": 2.41,
     "recommandations_gagnantes_pct": 72.1,
     "recommandations_perdantes_pct": 0.6,
@@ -843,18 +843,18 @@
   }
  },
  "direct": {
-  "evaluees": 173,
+  "evaluees": 189,
   "suffisant": true,
-  "scenario_juste_pct": 79.2,
-  "brier": 0.3614,
-  "brier_naif": 0.578
+  "scenario_juste_pct": 76.7,
+  "brier": 0.3966,
+  "brier_naif": 0.6138
  },
  "lien_marche": {
   "e10": {
    "cotation": "rbob",
    "periode": [
     "2019-01-01",
-    "2026-11-18"
+    "2026-11-19"
    ],
    "decalage_jours": 2,
    "decalages_lies": [
@@ -877,7 +877,7 @@
    "cotation": "rbob",
    "periode": [
     "2019-01-01",
-    "2026-11-18"
+    "2026-11-19"
    ],
    "decalage_jours": 2,
    "decalages_lies": [
@@ -899,7 +899,7 @@
    "cotation": "ho",
    "periode": [
     "2019-01-01",
-    "2026-11-18"
+    "2026-11-19"
    ],
    "decalage_jours": 3,
    "decalages_lies": [
